@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudgray" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@id/carshaixuan_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:id="@id/carshaixuan_back"
+                style="@style/back" />
+
+            <TextView
+                android:text="@string/shaixuancheliang"
+                style="@style/topTitle" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hpx20" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/hpx140"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hpx80"
+                        android:layout_marginLeft="@dimen/wpx24"
+                        android:gravity="center_vertical"
+                        android:text="@string/yongcheshijian"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hpx1"
+                        android:background="@color/line_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hpx235"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:weightSum="1.0" >
+
+                        <LinearLayout
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/qucheshijian"
+                                android:textColor="@color/gray4"
+                                android:textSize="@dimen/sp16" />
+
+                            <LinearLayout
+                                android:id="@id/carshaixuan_quche_layout"
+                                android:layout_width="@dimen/wpx300"
+                                android:layout_height="@dimen/hpx130"
+                                android:layout_marginTop="@dimen/hpx15"
+                                android:background="@drawable/image_05"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@id/carshaixuan_quche_time"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textColor="@color/textgreen"
+                                    android:textSize="@dimen/sp16"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:id="@id/carshaixuan_quche_week"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textColor="@color/textgreen"
+                                    android:textSize="@dimen/sp16"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:id="@id/carshaixuan_quche_infor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/qucheshijian2"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/sp16" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/haicheshijian"
+                                android:textColor="@color/gray4"
+                                android:textSize="@dimen/sp16" />
+
+                            <LinearLayout
+                                android:id="@id/carshaixuan_haiche_layout"
+                                android:layout_width="@dimen/wpx300"
+                                android:layout_height="@dimen/hpx130"
+                                android:layout_marginTop="@dimen/hpx15"
+                                android:background="@drawable/image_05"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@id/carshaixuan_haiche_time"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textColor="@color/textgreen"
+                                    android:textSize="@dimen/sp16"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:id="@id/carshaixuan_haiche_week"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textColor="@color/textgreen"
+                                    android:textSize="@dimen/sp16"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:id="@id/carshaixuan_haiche_infor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/haicheshijian2"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/sp16" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hpx20"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/hpx80"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/wpx24"
+                        android:text="@string/huoxiangrongji"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hpx1"
+                        android:background="@color/line_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/hpx120"
+                        android:orientation="vertical" >
+
+                        <GridView
+                            android:id="@id/carshaixuan_rongji_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:cacheColorHint="@color/transparent"
+                            android:fadingEdge="none"
+                            android:fastScrollEnabled="false"
+                            android:footerDividersEnabled="false"
+                            android:headerDividersEnabled="false"
+                            android:listSelector="@color/transparent"
+                            android:numColumns="3"
+                            android:overScrollMode="never"
+                            android:paddingLeft="@dimen/wpx24"
+                            android:paddingRight="@dimen/wpx24"
+                            android:scrollbars="none"
+                            android:smoothScrollbar="true" >
+                        </GridView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@id/carshaixuan_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx100"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/wpx60"
+                    android:layout_marginRight="@dimen/wpx60"
+                    android:layout_marginTop="@dimen/hpx60"
+                    android:background="@drawable/chongdianyemian5_1_03"
+                    android:gravity="center"
+                    android:text="@string/quedingshaixuan"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp18" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/wpx24"
+                    android:paddingRight="@dimen/wpx24" >
+
+                    <FrameLayout
+                        android:id="@id/carshaixuan_mendian_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hpx80"
+                        android:layout_marginBottom="@dimen/hpx20"
+                        android:layout_marginTop="@dimen/hpx20"
+                        android:background="@drawable/kuang_03"
+                        android:descendantFocusability="blocksDescendants" >
+
+                        <TextView
+                            android:id="@id/carshaixuan_mendian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="@dimen/wpx20"
+                            android:gravity="center_vertical"
+                            android:text="@string/quanbumendian"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+
+                        <ImageView
+                            android:layout_width="@dimen/wpx32"
+                            android:layout_height="@dimen/hpx32"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginRight="@dimen/wpx20"
+                            android:src="@drawable/image_down" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/carshaixuan_listview_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="@dimen/wpx24"
+                    android:layout_marginRight="@dimen/wpx24"
+                    android:layout_marginTop="@dimen/hpx100"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <ListView
+                        android:id="@id/carshaixuan_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/image_addr_bg"
+                        android:divider="@color/line_gray"
+                        android:dividerHeight="@dimen/hpx1"
+                        android:fadeScrollbars="false"
+                        android:fadingEdge="none"
+                        android:fastScrollEnabled="false"
+                        android:footerDividersEnabled="false"
+                        android:headerDividersEnabled="false"
+                        android:overScrollMode="never"
+                        android:padding="@dimen/wpx1" >
+                    </ListView>
+                </LinearLayout>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@id/carshaixuan_date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_black"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx100"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/wpx20"
+                android:paddingRight="@dimen/wpx20"
+                android:weightSum="1.0" >
+
+                <TextView
+                    android:id="@id/carshaixuan_date_cancel"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:gravity="center_vertical"
+                    android:text="@string/quxiao"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/sp18" />
+
+                <TextView
+                    android:id="@id/carshaixuan_date_type"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/sp18" />
+
+                <TextView
+                    android:id="@id/carshaixuan_date_ok"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/ok"
+                    android:textColor="@color/textgreen"
+                    android:textSize="@dimen/sp18" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx1"
+                android:background="@color/line_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx450"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <LinearLayout
+                    android:id="@id/carshaixuan_date_picklayout"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/hpx450"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/carshaixuan_date_picklayout2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/hpx450"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

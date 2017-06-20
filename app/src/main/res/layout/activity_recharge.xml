@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudgray" >
+
+    <TextView
+        android:id="@id/recharge_zhifu_ok"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx100"
+        android:layout_gravity="bottom"
+        android:background="@color/yellow2"
+        android:gravity="center"
+        android:text="@string/querenchongzhi"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp18" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@id/recharge_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:id="@id/recharge_back"
+               style="@style/back" />
+
+            <TextView
+                android:id="@+id/recharge_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/chongzhi"
+                android:textColor="@color/textgreen"
+                android:textSize="@dimen/sp18" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hpx20"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/wpx24"
+            android:paddingRight="@dimen/wpx24" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx120"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/jine"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/sp16" />
+
+                <EditText
+                    android:id="@id/recharge_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx80"
+                    android:layout_marginLeft="@dimen/wpx20"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="请输入充值金额"
+                    android:digits="0123456789."
+                    android:inputType="number"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/sp16" >
+                </EditText>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx1"
+                android:background="@color/line_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx120"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@id/recharge_yibai"
+                    android:layout_width="@dimen/wpx150"
+                    android:layout_height="@dimen/hpx60"
+                    android:gravity="center"
+                    android:text="@string/yibai"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@id/recharge_erbai"
+                    android:layout_width="@dimen/wpx150"
+                    android:layout_height="@dimen/hpx60"
+                    android:layout_marginLeft="@dimen/wpx20"
+                    android:gravity="center"
+                    android:text="@string/erbai"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@id/recharge_wubai"
+                    android:layout_width="@dimen/wpx150"
+                    android:layout_height="@dimen/hpx60"
+                    android:layout_marginLeft="@dimen/wpx20"
+                    android:gravity="center"
+                    android:text="@string/wubai"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@id/recharge_yiqian"
+                    android:layout_width="@dimen/wpx150"
+                    android:layout_height="@dimen/hpx60"
+                    android:layout_marginLeft="@dimen/wpx20"
+                    android:gravity="center"
+                    android:text="@string/yiqian"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hpx20"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@id/recharge_zhifu_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx90"
+                android:descendantFocusability="blocksDescendants"
+                android:paddingLeft="@dimen/wpx24"
+                android:paddingRight="@dimen/wpx24" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:gravity="center_vertical"
+                    android:text="@string/paytype"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@id/recharge_zhifu_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/sp16" />
+
+                    <ImageView
+                        android:id="@id/recharge_zhifu_image"
+                        android:layout_width="@dimen/wpx30"
+                        android:layout_height="@dimen/hpx30"
+                        android:layout_marginLeft="@dimen/wpx20"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx1"
+                android:background="@color/line_gray" />
+
+            <RadioGroup
+                android:id="@id/recharge_zhifu_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/wpx24"
+                android:paddingRight="@dimen/wpx24" >
+
+                <RadioButton
+                    android:id="@id/recharge_zhifu_radio_zhifubao"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx100"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/zhifubao"
+                    android:drawablePadding="@dimen/wpx30"
+                    android:drawableRight="@drawable/btn_radio"
+                    android:text="@string/zhifubao"
+                    android:textColor="@color/gray4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx1"
+                    android:background="@color/line_gray" />
+
+                <RadioButton
+                    android:id="@id/recharge_zhifu_radio_weixin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx100"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/weixin"
+                    android:drawablePadding="@dimen/wpx30"
+                    android:drawableRight="@drawable/btn_radio"
+                    android:text="@string/weixin"
+                    android:textColor="@color/gray4" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:layout_marginTop="3dp"
+                android:gravity="center_vertical"
+                android:text="押金余额上限：¥10000.00 "
+                android:textSize="12dp"
+                android:textColor="@color/common_item_sub_text_color"
+                android:background="@color/backgroudgray"
+            />
+
+            <TextView
+                android:id="@+id/tv_remain_amount"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:layout_marginTop="3dp"
+                android:gravity="center_vertical"
+                android:text="当前账户的押余额："
+                android:textSize="12dp"
+                android:textColor="@color/common_item_sub_text_color"
+                android:background="@color/backgroudgray"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

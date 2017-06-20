@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="70dp"
+              android:background="@color/common_white_background_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="17dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/quche"
+            android:drawablePadding="10dp"
+            android:text="取车门店"
+            android:textSize="14dp"
+            android:textColor="@color/common_item_main_text_color"
+        />
+
+        <TextView
+            android:id="@+id/tv_pick_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="ABC门店"
+            android:textSize="14dp"
+            android:textColor="@color/common_item_sub_text_color"
+        />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="17dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/huanche"
+            android:drawablePadding="10dp"
+            android:text="还车门店"
+            android:textSize="14dp"
+            android:textColor="@color/common_item_main_text_color"
+        />
+
+        <TextView
+            android:id="@+id/tv_return_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="ABC门店"
+            android:textSize="14dp"
+            android:textColor="@color/common_item_sub_text_color"
+        />
+    </RelativeLayout>
+
+
+</LinearLayout>

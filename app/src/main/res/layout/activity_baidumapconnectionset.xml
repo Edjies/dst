@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgroudgray"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@id/baidumapconnectionset_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+       >
+
+        <TextView
+            android:id="@id/baidumapconnectionset_back"
+            style="@style/back"/>
+
+        <TextView
+            style="@style/topTitle"
+            android:text="@string/shaixuanjiekou"
+        />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@id/baidumapconnectionset_seeklayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx200"
+        android:layout_marginTop="@dimen/hpx20"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hpx80"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/wpx24"
+            android:paddingRight="@dimen/wpx24"
+            android:text="@string/chakanjuli"
+            android:textColor="@color/gray4"
+            android:textSize="@dimen/sp16"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx120"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/wpx24"
+            android:paddingRight="@dimen/wpx24">
+
+            <LinearLayout
+                android:layout_width="@dimen/wpx570"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <SeekBar
+                    android:id="@id/baidumapconnectionset_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:maxHeight="@dimen/hpx5"
+                    android:minHeight="@dimen/hpx5"
+                    android:progressDrawable="@drawable/seekbar_bg"
+                    android:thumb="@drawable/yuandian"/>
+            </LinearLayout>
+
+            <!-- android:thumb[drawable]//设置滑块的图样 -->
+            <!-- android:progressDrawable[drawable]//设置进度条的图样 -->
+
+            <TextView
+                android:id="@id/baidumapconnectionset_seektext"
+                android:layout_width="@dimen/wpx100"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/wpx10"
+                android:gravity="center"
+                android:textColor="@color/textgreen"
+                android:textSize="@dimen/sp16"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx200"
+        android:layout_marginTop="@dimen/hpx20"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/baidumapconnectionset_connectiongtext"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hpx80"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/wpx30"
+            android:paddingRight="@dimen/wpx30"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/line"/>
+
+        <GridView
+            android:id="@id/baidumapconnectionset_connectionggridview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx120"
+            android:layout_gravity="center_vertical"
+            android:cacheColorHint="@color/transparent"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="@color/transparent"
+            android:numColumns="4"
+            android:paddingLeft="@dimen/wpx30"
+            android:paddingRight="@dimen/wpx30"
+            android:scrollbars="none"
+            android:smoothScrollbar="true">
+        </GridView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx200"
+        android:layout_marginTop="@dimen/hpx20"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/baidumapconnectionset_patterntext"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hpx80"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/wpx30"
+            android:paddingRight="@dimen/wpx30"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/line"/>
+
+        <GridView
+            android:id="@id/baidumapconnectionset_patterngridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:cacheColorHint="@color/transparent"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="@color/transparent"
+            android:numColumns="4"
+            android:paddingLeft="@dimen/wpx30"
+            android:paddingRight="@dimen/wpx30"
+            android:scrollbars="none"
+            android:smoothScrollbar="true">
+        </GridView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx200"
+        android:layout_marginTop="@dimen/hpx20"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/baidumapconnectionset_statustext"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hpx80"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/wpx30"
+            android:paddingRight="@dimen/wpx30"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/line"/>
+
+        <GridView
+            android:id="@id/baidumapconnectionset_statusgridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:cacheColorHint="@color/transparent"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="@color/transparent"
+            android:numColumns="4"
+            android:paddingLeft="@dimen/wpx30"
+            android:paddingRight="@dimen/wpx30"
+            android:scrollbars="none"
+            android:smoothScrollbar="true">
+        </GridView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/baidumapconnectionset_ok"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx100"
+        android:layout_marginLeft="@dimen/wpx60"
+        android:layout_marginRight="@dimen/wpx60"
+        android:layout_marginTop="@dimen/hpx30"
+        android:background="@drawable/chongdianyemian5_1_03"
+        android:gravity="center"
+        android:text="@string/quedingshaixuan"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp18"/>
+
+</LinearLayout>

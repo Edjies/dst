@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudgray"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@id/collection_listitem_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/hpx20" >
+
+            <LinearLayout
+                android:id="@id/collection_listitem_inforlayout"
+                android:layout_width="@dimen/wpx720"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/hpx20"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@id/collection_listitem_infor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/hpx80"
+                    android:paddingLeft="@dimen/hpx24"
+                    android:paddingRight="@dimen/hpx24"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/sp16" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/hpx24"
+                    android:paddingRight="@dimen/hpx24" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/hpx80"
+                        android:layout_gravity="left"
+                        android:gravity="center_vertical"
+                        android:text="@string/dizhi"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:id="@id/collection_listitem_infor_install_site"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/wpx10"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/hpx80"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx1"
+                    android:background="@color/line_gray" />
+
+                <TextView
+                    android:id="@id/collection_listitem_infor_systime"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx80"
+                    android:gravity="right|center_vertical"
+                    android:paddingLeft="@dimen/hpx24"
+                    android:paddingRight="@dimen/hpx24"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp14" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/collection_listitem_delete"
+                android:layout_width="@dimen/wpx200"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/hpx20"
+                android:background="@color/red"
+                android:gravity="center"
+                android:text="@string/shanchu"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@id/chargestationinfor_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroudgray"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/hpx100"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/hpx10" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/hpx80"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/wpx24"
+                android:paddingRight="@dimen/wpx24"
+                android:text="@string/diazhanxianxi"
+                android:textColor="@color/gray4"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx1"
+                android:background="@color/line_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx210"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/wpx24"
+                android:paddingRight="@dimen/wpx24"
+                android:weightSum="1.0" >
+
+                <FrameLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25" >
+
+                    <ImageView
+                        android:id="@id/chargestationinfor_view2_chargeimage"
+                        android:layout_width="@dimen/wpx130"
+                        android:layout_height="@dimen/hpx130"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/no_pic" />
+
+                    <TextView
+                        android:id="@id/chargestationinfor_view2_chargeimagebottom"
+                        android:layout_width="@dimen/wpx36"
+                        android:layout_height="@dimen/hpx36"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginBottom="@dimen/hpx30"
+                        android:layout_marginRight="@dimen/wpx30"
+                        android:background="@drawable/pic_frame"
+                        android:gravity="center|center_vertical"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp12"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/wpx10" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/hpx10"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@id/chargestationinfor_view2_workdatetitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/gongzuori"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+
+                        <TextView
+                            android:id="@id/chargestationinfor_view2_workdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/hpx10"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@id/chargestationinfor_view2_weekdatetitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/jiejiari"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+
+                        <TextView
+                            android:id="@id/chargestationinfor_view2_weekdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/wpx1"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_gray"
+                    android:paddingBottom="@dimen/hpx20"
+                    android:paddingTop="@dimen/hpx20" />
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.15"
+                    android:gravity="center_vertical|right"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@id/chargestationinfor_view2_phoneimage"
+                        android:layout_width="@dimen/wpx66"
+                        android:layout_height="@dimen/hpx66"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cdzxiangqing4_4_11" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/hpx10"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/kefu2"
+                        android:textColor="@color/menugreen"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:id="@id/chargestationinfor_view2_phonetext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/hpx10"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp16"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hpx30"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/hpx10" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/hpx80"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/wpx24"
+                android:paddingRight="@dimen/wpx24"
+                android:text="@string/xiangxidizhi"
+                android:textColor="@color/gray4"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx1"
+                android:background="@color/line_gray" />
+
+            <TextView
+                android:id="@id/chargestationinfor_view2_dizhi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/hpx10"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/hpx50"
+                android:paddingLeft="@dimen/wpx24"
+                android:paddingRight="@dimen/wpx24"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hpx30"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/hpx10" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/hpx80"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/wpx24"
+                android:paddingRight="@dimen/wpx24"
+                android:text="@string/shoufeifangshi"
+                android:textColor="@color/gray4"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx1"
+                android:background="@color/line_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/hpx10"
+                android:layout_marginTop="@dimen/hpx10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/wpx24"
+                android:paddingRight="@dimen/wpx24" >
+
+                <TextView
+                    android:layout_width="@dimen/wpx130"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/dianfei"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+
+                <com.haofeng.apps.dst.ui.view.MyListView
+                    android:id="@id/chargestationinfor_view2_dianfeilist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@color/transparent"
+                    android:divider="@color/white"
+                    android:fadingEdge="none"
+                    android:fastScrollEnabled="false"
+                    android:footerDividersEnabled="false"
+                    android:headerDividersEnabled="false"
+                    android:smoothScrollbar="false" >
+                </com.haofeng.apps.dst.ui.view.MyListView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx2"
+                android:layout_marginLeft="@dimen/wpx24"
+                android:layout_marginRight="@dimen/wpx24"
+                android:background="@color/line_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/hpx10"
+                android:layout_marginTop="@dimen/hpx10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/wpx24"
+                android:paddingRight="@dimen/wpx24" >
+
+                <TextView
+                    android:layout_width="@dimen/wpx130"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/fuwufei"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+
+                <com.haofeng.apps.dst.ui.view.MyListView
+                    android:id="@id/chargestationinfor_view2_fuwufeilist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:cacheColorHint="@color/transparent"
+                    android:divider="@color/white"
+                    android:fadingEdge="none"
+                    android:fastScrollEnabled="false"
+                    android:footerDividersEnabled="false"
+                    android:headerDividersEnabled="false"
+                    android:smoothScrollbar="false" >
+                </com.haofeng.apps.dst.ui.view.MyListView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx2"
+                android:layout_marginLeft="@dimen/wpx24"
+                android:layout_marginRight="@dimen/wpx24"
+                android:background="@color/line_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/hpx10"
+                android:layout_marginTop="@dimen/hpx10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/wpx24"
+                android:paddingRight="@dimen/wpx24" >
+
+                <TextView
+                    android:layout_width="@dimen/wpx130"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/tingchefei"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@id/chargestationinfor_view2_tingchefeiinfor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/hpx10"
+                            android:gravity="center_vertical"
+                            android:minHeight="@dimen/hpx50"
+                            android:paddingLeft="@dimen/wpx40"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp16" />
+
+                        <com.haofeng.apps.dst.ui.view.MyListView
+                            android:id="@id/chargestationinfor_view2_tingchefeilist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="@color/transparent"
+                            android:divider="@color/white"
+                            android:fadingEdge="none"
+                            android:fastScrollEnabled="false"
+                            android:footerDividersEnabled="false"
+                            android:headerDividersEnabled="false"
+                            android:smoothScrollbar="false" >
+                        </com.haofeng.apps.dst.ui.view.MyListView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@id/chargestationinfor_view2_tingchefeiinfor2layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@id/chargestationinfor_view2_tingchefeiinfor2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/hpx10"
+                            android:gravity="center_vertical"
+                            android:minHeight="@dimen/hpx50"
+                            android:paddingLeft="@dimen/wpx40"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp16" />
+
+                        <com.haofeng.apps.dst.ui.view.MyListView
+                            android:id="@id/chargestationinfor_view2_tingchefeilist2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="@color/transparent"
+                            android:divider="@color/white"
+                            android:fadingEdge="none"
+                            android:fastScrollEnabled="false"
+                            android:footerDividersEnabled="false"
+                            android:headerDividersEnabled="false"
+                            android:smoothScrollbar="false" >
+                        </com.haofeng.apps.dst.ui.view.MyListView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hpx30"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/hpx10" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/hpx80"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/wpx24"
+                android:paddingRight="@dimen/wpx24"
+                android:text="@string/wenxintishi"
+                android:textColor="@color/gray4"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx1"
+                android:background="@color/line_gray" />
+
+            <TextView
+                android:id="@id/chargestationinfor_view2_app_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/hpx10"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/hpx50"
+                android:paddingLeft="@dimen/wpx24"
+                android:paddingRight="@dimen/wpx24"
+                android:text="@string/zhuyi"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hpx30"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/hpx10" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/hpx80"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/wpx24"
+                android:paddingRight="@dimen/wpx24"
+                android:text="@string/yunyingfuwushang"
+                android:textColor="@color/gray4"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx1"
+                android:background="@color/line_gray" />
+
+            <TextView
+                android:id="@id/chargestationinfor_view2_app_cs_building_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/hpx10"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/hpx50"
+                android:paddingLeft="@dimen/wpx24"
+                android:paddingRight="@dimen/wpx24"
+                android:text="@string/company"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

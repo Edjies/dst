@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudgray"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@id/wallet_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/hpx50" >
+
+        <TextView
+            android:id="@id/wallet_back"
+           style="@style/back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx96"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/wallet"
+            android:textColor="@color/textgreen"
+            android:textSize="@dimen/sp18" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx400"
+        android:background="@drawable/bg_qianbao"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/wpx24" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/wpx60"
+            android:text="@string/moneyyue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@id/wallet_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hpx20"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp30" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@id/wallet_chongzhi_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx90"
+        android:background="@color/white"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingLeft="@dimen/wpx24"
+        android:paddingRight="@dimen/wpx24" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/wpx48"
+                android:layout_height="@dimen/wpx48"
+                android:scaleType="fitXY"
+                android:src="@drawable/chongzhi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/wpx20"
+                android:gravity="center_vertical"
+                android:text="@string/chongzhi"
+                android:textColor="@color/gray4"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/wpx12"
+            android:layout_height="@dimen/hpx20"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="@dimen/wpx20"
+            android:scaleType="fitXY"
+            android:src="@drawable/right" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx1"
+        android:background="@color/line_gray" />
+
+    <FrameLayout
+        android:id="@id/wallet_tixian_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx90"
+        android:background="@color/white"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingLeft="@dimen/wpx24"
+        android:paddingRight="@dimen/wpx24" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/wpx48"
+                android:layout_height="@dimen/wpx48"
+                android:scaleType="fitXY"
+                android:src="@drawable/tixian" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/wpx20"
+                android:gravity="center_vertical"
+                android:text="@string/tixian"
+                android:textColor="@color/gray4"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center_vertical"
+            android:text="@string/zanweikaitong"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp14" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx1"
+        android:background="@color/line_gray" />
+
+    <FrameLayout
+        android:id="@id/wallet_mingxi_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx90"
+        android:background="@color/white"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingLeft="@dimen/wpx24"
+        android:paddingRight="@dimen/wpx24" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/wpx48"
+                android:layout_height="@dimen/wpx48"
+                android:scaleType="fitXY"
+                android:src="@drawable/mingxi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/wpx20"
+                android:gravity="center_vertical"
+                android:text="@string/mingxi"
+                android:textColor="@color/gray4"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/wpx12"
+            android:layout_height="@dimen/hpx20"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="@dimen/wpx20"
+            android:scaleType="fitXY"
+            android:src="@drawable/right" />
+    </FrameLayout>
+
+</LinearLayout>

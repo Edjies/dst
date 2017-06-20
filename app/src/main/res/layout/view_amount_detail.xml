@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_amount_info"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="150dp"
+              android:background="@color/common_white_background_color">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:text="预计租金"
+            android:textSize="14dp"
+            android:textColor="@color/common_item_main_text_color"
+        />
+
+        <TextView
+            android:id="@+id/tv_amount_predict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:text="300"
+            android:textSize="14dp"
+            android:textColor="@color/common_item_sub_text_color"
+        />
+
+        <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:text="已产生租车费用"
+            android:textSize="14dp"
+            android:textColor="@color/common_item_main_text_color"
+        />
+
+        <TextView
+            android:id="@+id/tv_amount_spend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:text="300"
+            android:textSize="14dp"
+            android:textColor="@color/common_item_sub_text_color"
+        />
+
+        <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:text="汽车押金"
+            android:textSize="14dp"
+            android:textColor="@color/common_item_main_text_color"
+        />
+
+        <TextView
+            android:id="@+id/tv_amount_deposit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:text="300"
+            android:textSize="14dp"
+            android:textColor="@color/common_item_sub_text_color"
+        />
+
+        <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

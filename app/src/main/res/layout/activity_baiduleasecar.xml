@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        style="@style/titlebackground"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx96"
+        android:layout_gravity="top" >
+
+        <TextView
+            android:id="@id/leasecar_back"
+            style="@style/titlesmalltext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/wpx30"
+            android:background="@drawable/return_arrow" />
+
+        <TextView
+            android:id="@id/leasecar_carinfor_chepaihao"
+            style="@style/titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@id/leasecar_baidumap"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx600"
+            android:layout_gravity="top"
+            android:clickable="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx100"
+            android:layout_gravity="bottom"
+            android:background="@drawable/lent_frame1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/wpx40"
+            android:paddingRight="@dimen/wpx40" >
+
+            <TextView
+                android:id="@id/leasecar_carinfor_update_datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/hpx50"
+                android:layout_gravity="top|right"
+                android:gravity="center_vertical"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx50"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/cheliangzhuangtai"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:id="@id/leasecar_carinfor_car_current_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="@dimen/wpx30"
+                        android:layout_height="@dimen/hpx30"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/lent_zujin" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/wpx10"
+                        android:gravity="center_vertical"
+                        android:text="@string/yuezujin"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:id="@id/leasecar_carinfor_zujin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/wpx152"
+            android:layout_height="@dimen/hpx152"
+            android:layout_gravity="left|bottom"
+            android:layout_marginBottom="@dimen/hpx50"
+            android:layout_marginLeft="@dimen/wpx40"
+            android:background="@drawable/lent_pinpai"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/wpx10" >
+
+            <ImageView
+                android:id="@id/leasecar_carinfor_typeimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lent_frame2"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/wpx40"
+        android:paddingRight="@dimen/wpx40" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx40"
+            android:layout_marginBottom="@dimen/hpx3" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/carinfor"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@id/leasecar_carinfor_total_driving_mileage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx40"
+            android:layout_marginBottom="@dimen/hpx3" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/carinfor2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@id/leasecar_carinfor_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx40"
+            android:layout_marginBottom="@dimen/hpx3" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/carinfor3"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@id/leasecar_carinfor_direction"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx40"
+            android:layout_marginBottom="@dimen/hpx3" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/carinfor4"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@id/leasecar_carinfor_moter_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx40"
+            android:layout_marginBottom="@dimen/hpx3" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/carinfor5"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@id/leasecar_carinfor_moter_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx40"
+            android:layout_marginBottom="@dimen/hpx3" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/carinfor6"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@id/leasecar_carinfor_moter_controller_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx40"
+            android:layout_marginBottom="@dimen/hpx3" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/carinfor7"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@id/leasecar_carinfor_moter_generatrix_current"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx40"
+            android:layout_marginBottom="@dimen/hpx3" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/carinfor8"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@id/leasecar_carinfor_moter_current"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx40"
+            android:layout_marginBottom="@dimen/hpx3" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/carinfor9"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@id/leasecar_carinfor_moter_voltage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx40"
+            android:layout_marginBottom="@dimen/hpx3" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/carinfor10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@id/leasecar_carinfor_battery_package_soc"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx40" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/carinfor11"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@id/leasecar_carinfor_data_source"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

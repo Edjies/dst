@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/wpx600"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="@dimen/wpx600"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/hpx150"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/hpx10" >
+
+            <TextView
+                android:id="@id/view_inforshow_dialog_infor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/wpx30"
+                android:layout_marginRight="@dimen/wpx30"
+                android:lineSpacingExtra="@dimen/hpx15"
+                android:minHeight="@dimen/hpx60"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/wpx600"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/line" />
+
+        <LinearLayout
+            android:layout_width="@dimen/wpx600"
+            android:layout_height="@dimen/hpx100"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@id/view_inforshow_dialog_cancel"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/zanshibuyao"
+                android:textColor="@color/red"
+                android:textSize="@dimen/sp16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/line_shu" />
+
+            <TextView
+                android:id="@id/view_inforshow_dialog_phoneing"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/bodadianhua"
+                android:textColor="@color/menugreen"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

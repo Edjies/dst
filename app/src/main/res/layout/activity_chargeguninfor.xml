@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgroudgray"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@id/chargeguninfor_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/hpx50">
+
+        <TextView
+            android:id="@id/chargeguninfor_back"
+            style="@style/back"/>
+
+        <TextView
+            android:text="@string/lijichongdian"
+          style="@style/topTitle"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hpx30"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/hpx10"
+        android:paddingTop="@dimen/hpx10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hpx80"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/wpx24"
+            android:paddingRight="@dimen/wpx24"
+            android:text="@string/dianzhuangxinxi"
+            android:textColor="@color/gray4"
+            android:textSize="@dimen/sp16"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx1"
+            android:background="@color/line_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx180"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/hpx10"
+            android:weightSum="1.0">
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dianqiangzhuangtai2"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@id/chargeguninfor_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hpx10"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/wpx1"
+                android:layout_height="match_parent"
+                android:background="@color/line_gray"/>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/chongdianfangshi"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@id/chargeguninfor_fangshi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hpx10"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/wpx1"
+                android:layout_height="match_parent"
+                android:background="@color/line_gray"/>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/chongdianjiekou"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@id/chargeguninfor_jiekou"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hpx10"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hpx30"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/hpx10"
+        android:paddingTop="@dimen/hpx10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hpx80"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/wpx24"
+            android:paddingRight="@dimen/wpx24"
+            android:text="@string/dianzhuangcanshu"
+            android:textColor="@color/gray4"
+            android:textSize="@dimen/sp16"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx1"
+            android:background="@color/line_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx180"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/hpx10"
+            android:paddingTop="@dimen/hpx10"
+            android:weightSum="1.0">
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/edingv"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@id/chargeguninfor_edv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hpx10"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/wpx1"
+                android:layout_height="match_parent"
+                android:background="@color/line_gray"/>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/edinga"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@id/chargeguninfor_eda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hpx10"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/wpx1"
+                android:layout_height="match_parent"
+                android:background="@color/line_gray"/>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/edingw"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@id/chargeguninfor_edw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hpx10"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@id/chargeguninfor_chongdian"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx100"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/wpx60"
+        android:layout_marginRight="@dimen/wpx60"
+        android:layout_marginTop="@dimen/hpx40"
+        android:background="@drawable/chongdianyemian5_1_03"
+        android:gravity="center"
+        android:text="@string/charge_start"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp18"/>
+
+    <CheckBox
+        android:id="@id/chargeguninfor_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/hpx30"
+        android:button="@drawable/btn_checkbox"
+        android:checked="true"
+        android:paddingLeft="@dimen/wpx30"
+        android:text="@string/regist_check"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/sp14"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hpx20"
+        android:gravity="center"
+        android:paddingLeft="@dimen/wpx20"
+        android:paddingRight="@dimen/wpx20"
+        android:text="@string/zhuyi"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/sp14"
+        android:visibility="gone"/>
+
+</LinearLayout>

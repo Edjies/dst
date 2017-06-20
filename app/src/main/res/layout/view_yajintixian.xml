@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/yajintixian" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:padding="11dp"
+        android:text="押金会立即退回，退款后，您下次租车下单时需重新缴纳租车押金。确认要进行此退款吗？" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp" >
+
+        <Button
+            android:id="@+id/view_yajintixian_concel"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/concel"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/view_yajintixian_yajin_tuikuan"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="#81BF30"
+            android:text="押金退款" />
+    </RelativeLayout>
+
+</LinearLayout>

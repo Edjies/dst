@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudgray"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@id/listview_item_news_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@id/listview_item_news_infor_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/hpx20"
+        android:layout_marginTop="@dimen/hpx36"
+        android:background="@drawable/pic_frame"
+        android:minHeight="@dimen/hpx50"
+        android:padding="@dimen/wpx10"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/wpx30"
+        android:layout_marginRight="@dimen/wpx30"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@id/listview_item_news_infor_toplayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx300"
+            android:layout_margin="@dimen/wpx10"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:focusable="true" >
+
+            <ImageView
+                android:id="@id/listview_item_news_infor_topimage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/no_pic2" />
+
+            <ImageView
+                android:id="@id/listview_item_news_infor_topimage2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@id/listview_item_news_infor_topinfor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/pic_frame"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/hpx80"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/line" />
+
+        <com.haofeng.apps.dst.ui.view.MyListView
+            android:id="@id/listview_item_news_infor_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@drawable/line"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="false" >
+        </com.haofeng.apps.dst.ui.view.MyListView>
+    </LinearLayout>
+
+</LinearLayout>

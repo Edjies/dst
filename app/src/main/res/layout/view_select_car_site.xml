@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/common_white_background_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/quche"
+            android:drawablePadding="10dp"
+            android:text="取车门店"
+            android:textSize="15dp"
+            android:textColor="@color/common_item_main_text_color"
+        />
+
+        <TextView
+            android:id="@+id/tv_pick_site"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:minWidth="100dp"
+            android:gravity="center_vertical|right"
+            android:drawableRight="@drawable/right"
+            android:drawablePadding="7dp"
+            android:hint="请选择"
+            android:textSize="15dp"
+            android:textColorHint="@color/common_item_sub_text_color"
+            android:textColor="@color/common_item_sub_text_color"
+        />
+    </RelativeLayout>
+
+    <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:layout_marginLeft="14dp" android:layout_marginRight="14dp" android:background="@color/common_divide_color"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/huanche"
+            android:drawablePadding="10dp"
+            android:text="还车门店"
+            android:textSize="15dp"
+            android:textColor="@color/common_item_main_text_color"
+        />
+
+        <TextView
+            android:id="@+id/tv_return_site"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:minWidth="100dp"
+            android:gravity="center_vertical|right"
+            android:drawableRight="@drawable/right"
+            android:drawablePadding="7dp"
+            android:hint="请选择"
+            android:textSize="15dp"
+            android:textColorHint="@color/common_item_sub_text_color"
+            android:textColor="@color/common_item_sub_text_color"
+        />
+    </RelativeLayout>
+
+
+</LinearLayout>

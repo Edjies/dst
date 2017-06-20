@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/backgroudgray"
+                android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="租车订单:"
+                android:textColor="@color/textgreen"/>
+
+            <TextView
+                android:id="@+id/view_concel_rent_car_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1234"
+                android:textColor="@color/gray4"/>
+
+            <TextView
+                android:id="@+id/view_concel_rent_car_pay_way"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="支付宝"
+                android:textColor="@color/textgreen"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/green"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="3dp"
+                android:text="您取消了租车订单给您退款"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/view_concel_rent_car_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="退款金额："
+                android:textColor="@color/gray"/>
+            <TextView
+                android:id="@+id/view_concel_rent_car_date"
+                android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="6dp"
+                      android:drawableLeft="@drawable/xiangqing_open_time"
+                      android:drawablePadding="3dp"
+                      android:gravity="center_vertical"
+                      android:text="2017"
+                      android:textColor="@color/gray"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudgray"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@id/operationhelp_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/hpx50" >
+
+        <TextView
+            android:id="@id/operationhelp_back"
+            style="@style/back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx96"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/operationhelp"
+            android:textColor="@color/textgreen"
+            android:textSize="@dimen/sp18" />
+    </FrameLayout>
+
+    <WebView
+        android:id="@id/operationhelp_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/hpx20" />
+
+</LinearLayout>

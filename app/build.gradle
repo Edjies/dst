@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+    }
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+    defaultConfig {
+        applicationId "com.haofeng.apps.dst"
+        minSdkVersion 14
+        targetSdkVersion 22
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
+    }
+
+    signingConfigs {
+
+        debug {
+            storeFile file("E:\\dst_doc\\dst.key")
+            storePassword "haofengapps"
+            keyAlias "haofengapps-dst"
+            keyPassword "haofengappsdst"
+        }
+
+        release {
+            storeFile file("E:\\dst_doc\\dst.key")
+            storePassword "haofengapps"
+            keyAlias "haofengapps-dst"
+            keyPassword "haofengappsdst"
+        }
+    }
+}
+
+dependencies {
+    compile project(':pulltorefresh')
+    compile files('libs/alipaySDK-20151014.jar')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/jg_filter_sdk_1.1.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/umeng-analytics-v6.0.0.jar')
+    compile files('libs/universal-image-loader-1.9.3.jar')
+    compile files('libs/wup-1.0.0.E-SNAPSHOT.jar')
+    compile files('libs/Xg_sdk_v2.46_20160602_1638.jar')
+    compile files('libs/zxing-3.1.0.jar')
+    compile 'com.android.support:support-v4:22.2.1'
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.zcweng:switch-button:0.0.3@aar'
+    compile('cn.qqtheme.framework:WheelPicker:1.5.0') {
+        exclude group: 'com.android.support'
+    }
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.android.support:design:22.2.0'
+}

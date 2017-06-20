@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroudgray"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@id/suggestlist_listitem_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@id/suggestlist_listitem_infor_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@id/suggestlist_listitem_infor_code"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/hpx100"
+        android:gravity="left|bottom"
+        android:paddingLeft="@dimen/wpx35"
+        android:paddingRight="@dimen/wpx35"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/sp14"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hpx20"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/hpx10"
+        android:paddingLeft="@dimen/wpx40"
+        android:paddingRight="@dimen/wpx35"
+        android:paddingTop="@dimen/hpx10" >
+
+        <TextView
+            android:id="@id/suggestlist_listitem_infor_time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx50"
+            android:layout_marginLeft="@dimen/wpx40"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hpx10"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/hpx50"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/wpx30"
+                android:layout_height="@dimen/hpx30"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/advice_icon1" />
+
+            <TextView
+                android:id="@id/suggestlist_listitem_infor_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/wpx10"
+                android:lineSpacingExtra="@dimen/hpx15"
+                android:minHeight="@dimen/hpx50"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/line" />
+
+    <LinearLayout
+        android:id="@id/suggestlist_listitem_infor_respond_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/hpx10"
+        android:paddingLeft="@dimen/wpx35"
+        android:paddingRight="@dimen/wpx35"
+        android:paddingTop="@dimen/hpx10" >
+
+        <TextView
+            android:id="@id/suggestlist_listitem_infor_respond_time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx50"
+            android:layout_marginLeft="@dimen/wpx40"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hpx10"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/hpx50" >
+
+            <ImageView
+                android:layout_width="@dimen/wpx30"
+                android:layout_height="@dimen/hpx30"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/advice_icon2" />
+
+            <TextView
+                android:id="@id/suggestlist_listitem_infor_respond_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/wpx10"
+                android:lineSpacingExtra="@dimen/hpx15"
+                android:minHeight="@dimen/hpx50"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/suggestlist_listitem_infor_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/suggestlist_listitem_infor_responder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:lineSpacingExtra="@dimen/hpx15"
+        android:minHeight="@dimen/hpx50"
+        android:paddingLeft="@dimen/wpx40"
+        android:text="@string/suggestcontent"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/sp16"
+        android:visibility="gone" />
+
+</LinearLayout>

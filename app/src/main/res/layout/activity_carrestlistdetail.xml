@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudgray" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx100"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="0.65"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/wpx20"
+            android:weightSum="1.0" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/yufukuan"
+                    android:textColor="@color/textgreen"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    android:id="@id/carrestlistdetail_ok_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textgreen"
+                    android:textSize="@dimen/sp18" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/carrestlistdetail_ok_time"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical|right"
+                android:text="@string/fukuaninfor"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/carrestlistdetail_ok"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:background="@color/yellow2"
+            android:gravity="center"
+            android:text="@string/querenfukuan"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_marginBottom="@dimen/hpx112"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@id/carrestlistdetail_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="@dimen/hpx50" >
+
+            <TextView
+                android:id="@id/carrestlistdetail_back"
+                style="@style/back" />
+
+            <TextView
+                android:text="@string/dingdanzhifu"
+                style="@style/topTitle" />
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hpx20"
+            android:fadingEdge="none"
+            android:overScrollMode="never" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx155"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/hpx60" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/hpx2"
+                            android:layout_gravity="center"
+                            android:background="@color/textgreen" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="@dimen/wpx40"
+                                android:layout_height="@dimen/wpx40"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/tuoyuan2" />
+
+                            <ImageView
+                                android:layout_width="@dimen/wpx40"
+                                android:layout_height="@dimen/wpx40"
+                                android:layout_marginLeft="@dimen/wpx90"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/tuoyuan" />
+
+                            <ImageView
+                                android:layout_width="@dimen/wpx40"
+                                android:layout_height="@dimen/wpx40"
+                                android:layout_marginLeft="@dimen/wpx90"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/tuoyuan" />
+
+                            <ImageView
+                                android:layout_width="@dimen/wpx40"
+                                android:layout_height="@dimen/wpx40"
+                                android:layout_marginLeft="@dimen/wpx90"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/tuoyuan" />
+
+                            <ImageView
+                                android:layout_width="@dimen/wpx40"
+                                android:layout_height="@dimen/wpx40"
+                                android:layout_marginLeft="@dimen/wpx90"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/tuoyuan" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hpx60"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="@dimen/wpx130"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/daizhifu"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp14" />
+
+                        <TextView
+                            android:layout_width="@dimen/wpx130"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/yizhifu"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp14" />
+
+                        <TextView
+                            android:layout_width="@dimen/wpx130"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/yitiche"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp14" />
+
+                        <TextView
+                            android:layout_width="@dimen/wpx130"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/yihaiche"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp14" />
+
+                        <TextView
+                            android:layout_width="@dimen/wpx130"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/yiwanjie"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp14" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hpx20"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/hpx80"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/wpx24"
+                    android:paddingTop="@dimen/hpx20" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/dingdanhao"
+                        android:textColor="@color/textgreen"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:id="@id/carrestlistdetail_dingdanhao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/wpx10"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textgreen"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx60"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/wpx24" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/qucheshijian3"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:id="@id/carrestlistdetail_qucheshijian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/wpx10"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:minHeight="@dimen/hpx80"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/hpx20"
+                    android:paddingLeft="@dimen/wpx24" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/haicheshijian3"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:id="@id/carrestlistdetail_haicheshijian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/wpx10"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hpx20"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/hpx80"
+                    android:paddingLeft="@dimen/wpx24"
+                    android:paddingTop="@dimen/hpx20"
+                    android:text="@string/feiyongjiyajinshuoming"
+                    android:textColor="@color/textgreen"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx1"
+                    android:background="@color/line_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx60"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/wpx24"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/yongcheshichang"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:id="@id/carrestlistdetail_yongcheshichang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/wpx10"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx60"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/wpx24" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="租车费用:"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:id="@id/carrestlistdetail_zujinheji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/wpx10"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx60"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/wpx24" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/zujinyajin"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:id="@id/carrestlistdetail_zujinyajin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/wpx10"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/carrestlistdetail_lichengfeiyong_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/wpx24"
+                    android:paddingRight="@dimen/wpx24"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/lichengfeiyong"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:id="@id/carrestlistdetail_lichengfeiyong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/hpx60"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:minHeight="@dimen/hpx80"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/hpx20"
+                    android:paddingLeft="@dimen/wpx24" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="车辆保险:"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:id="@id/carrestlistdetail_baoxianfuwu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/wpx10"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hpx20"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/hpx80"
+                    android:paddingLeft="@dimen/wpx24"
+                    android:paddingTop="@dimen/hpx20"
+                    android:text="@string/zhifufeiyong"
+                    android:textColor="@color/textgreen"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx1"
+                    android:background="@color/line_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:minHeight="@dimen/hpx80"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/hpx20"
+                    android:paddingLeft="@dimen/wpx24" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/hejifufukuan"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:id="@id/carrestlistdetail_hejiyufukuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/wpx10"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx60"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/wpx24"
+                    android:paddingRight="@dimen/wpx24"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/qianbaoyue"
+                            android:textColor="@color/gray4"
+                            android:textSize="@dimen/sp16" />
+
+                        <TextView
+                            android:id="@id/carrestlistdetail_qianbaoyue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/wpx10"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/gray4"
+                            android:textSize="@dimen/sp16" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@id/carrestlistdetail_qianbaoyue2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:gravity="center_vertical"
+                        android:text="@string/qianbaoyue2"
+                        android:textColor="@color/textgreen"
+                        android:textSize="@dimen/sp14" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hpx20"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@id/carrestlistdetail_zhifu_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:descendantFocusability="blocksDescendants"
+                        android:minHeight="@dimen/hpx80"
+                        android:paddingLeft="@dimen/wpx24"
+                        android:paddingRight="@dimen/wpx24"
+                        android:paddingTop="@dimen/hpx20" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:gravity="center_vertical"
+                            android:text="@string/paytype"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@id/carrestlistdetail_zhifu_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/gray4"
+                                android:textSize="@dimen/sp16" />
+
+                            <ImageView
+                                android:id="@id/carrestlistdetail_zhifu_image"
+                                android:layout_width="@dimen/wpx30"
+                                android:layout_height="@dimen/hpx30"
+                                android:layout_marginLeft="@dimen/wpx20"
+                                android:scaleType="fitXY" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hpx1"
+                        android:background="@color/line_gray" />
+
+                    <RadioGroup
+                        android:id="@id/carrestlistdetail_zhifu_radiogroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingLeft="@dimen/wpx24"
+                        android:paddingRight="@dimen/wpx24" >
+
+                        <RadioButton
+                            android:id="@id/carrestlistdetail_zhifu_radio_yue"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/hpx100"
+                            android:background="@color/transparent"
+                            android:button="@null"
+                            android:checked="false"
+                            android:drawableLeft="@drawable/yuezhifu"
+                            android:drawablePadding="@dimen/wpx30"
+                            android:drawableRight="@drawable/btn_radio"
+                            android:text="@string/qianbaoyuezhifu"
+                            android:textColor="@color/gray4"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/hpx1"
+                            android:background="@color/line_gray"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@id/carrestlistdetail_zhifu_radio_zhifubao"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/hpx100"
+                            android:background="@color/transparent"
+                            android:button="@null"
+                            android:checked="true"
+                            android:drawableLeft="@drawable/zhifubao"
+                            android:drawablePadding="@dimen/wpx30"
+                            android:drawableRight="@drawable/btn_radio"
+                            android:text="@string/zhifubao"
+                            android:textColor="@color/gray4" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/hpx1"
+                            android:background="@color/line_gray" />
+
+                        <RadioButton
+                            android:id="@id/carrestlistdetail_zhifu_radio_weixin"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/hpx100"
+                            android:background="@color/transparent"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/weixin"
+                            android:drawablePadding="@dimen/wpx30"
+                            android:drawableRight="@drawable/btn_radio"
+                            android:text="@string/weixin"
+                            android:textColor="@color/gray4" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

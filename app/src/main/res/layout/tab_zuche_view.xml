@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudgray"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@id/tab_zuche_toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/hpx50" >
+
+        <LinearLayout
+            android:id="@id/tab_zuche_dizhi_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hpx96"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/wpx24"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@id/tab_zuche_dizhi_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/wpx5"
+                android:text="@string/shenzhen"
+                android:textColor="@color/textgreen"
+                android:textSize="@dimen/sp16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/nav_more" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx96"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/fenshizu"
+            android:textColor="@color/textgreen"
+            android:textSize="@dimen/sp18" />
+
+        <TextView
+            android:id="@id/tab_zuche_shaixuan"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hpx96"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/wpx24"
+            android:gravity="center"
+            android:text="@string/shaixuan"
+            android:textColor="@color/textgreen"
+            android:textSize="@dimen/sp16" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx2"
+        android:background="@color/line_gray" />
+
+    <FrameLayout
+        android:id="@id/tab_zuche_feiyong_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx80"
+        android:background="@color/gray3"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/wpx24"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@id/tab_zuche_feiyong_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shoufeibiaozhun"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:id="@id/tab_zuche_feiyong_shisuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/wpx10"
+                android:text="@string/feiyongshisuan"
+                android:textColor="@color/textgreen"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@id/tab_zuche_feiyong_close"
+            android:layout_width="@dimen/wpx48"
+            android:layout_height="@dimen/wpx48"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/wpx24"
+            android:scaleType="fitXY"
+            android:src="@drawable/close" />
+    </FrameLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@id/tab_zuche_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@drawable/line"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" />
+
+</LinearLayout>

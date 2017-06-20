@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/hpx100"
+    android:layout_gravity="center"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="@dimen/wpx40"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@id/listview_item_view_radiobtn_dialog_typeimage"
+            android:layout_width="@dimen/wpx40"
+            android:layout_height="@dimen/hpx40"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@id/listview_item_view_radiobtn_dialog_typetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/wpx50"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/listview_item_view_radiobtn_dialog_typeradio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="@dimen/wpx35"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_radio_off_holo_dark" />
+
+</FrameLayout>

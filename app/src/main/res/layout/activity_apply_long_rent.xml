@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_gray_background_color"
+>
+    <TextView
+        android:id="@+id/tv_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_status_bar_height"
+        android:background="@color/common_status_bar_background"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_height"
+        android:background="@color/common_title_bar_background"
+        android:layout_below="@+id/tv_status_bar" android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/common_title_padding_left"
+            android:paddingRight="@dimen/common_title_padding_right"
+            android:src="@drawable/fanhuig"
+            android:scaleType="center"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="申请长租"
+            android:textColor="@color/common_title_text_color"
+            android:textSize="@dimen/common_title_text_size"/>
+
+        <ImageView
+            android:id="@+id/iv_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/common_title_padding_left"
+            android:paddingRight="@dimen/common_title_padding_right"
+            android:src="@drawable/lianxikefu"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_divide_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/common_divide_color"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_progress"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/rl_title_bar"
+        android:background="@color/common_white_background_color">
+
+        <com.haofeng.apps.dst.ui.view.StepView
+            xmlns:step="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cv_step"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            step:unreachedTextColor="@color/common_divide_color"
+            step:reachedLineColor="@color/common_color_green"
+            step:textSize="12dp"
+            step:textColor="@color/common_item_sub_text_color"
+            step:currentDrawable="@drawable/shape_stepview_marker_reached"
+            step:reachedDrawable="@drawable/shape_stepview_marker_reached"
+            step:unreachedDrawable="@drawable/shape_stepview_marker_unreached"
+            step:lineHeight="1dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color" android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_next"
+        android:layout_below="@id/rl_progress">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include
+                android:id="@+id/view_1"
+                layout="@layout/view_long_rent_1"/>
+            <include
+                android:id="@+id/view_2"
+                android:visibility="gone"
+                layout="@layout/view_long_rent_2"/>
+            <include
+                android:id="@+id/view_3"
+                android:visibility="gone"
+                layout="@layout/view_long_rent_3"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_margin="18dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bt_green"
+        android:gravity="center"
+        android:text="下一步"
+        android:textSize="18dp"
+        android:textColor="@color/common_color_white"
+    />
+
+</RelativeLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_gray_background_color"
+>
+    <TextView
+        android:id="@+id/tv_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_status_bar_height"
+        android:background="@color/common_status_bar_background"
+    />
+
+    <RelativeLayout
+        android:id="@+id/rl_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_height"
+        android:background="@color/common_title_bar_background"
+    >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/common_title_padding_left"
+            android:paddingRight="@dimen/common_title_padding_right"
+            android:src="@drawable/fanhuig"
+            android:scaleType="center"
+            android:background="@null"
+        />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="车辆详情"
+            android:textColor="@color/common_title_text_color"
+            android:textSize="@dimen/common_title_text_size"
+
+        />
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/common_title_padding_left"
+            android:paddingRight="@dimen/common_title_padding_right"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/xuanchengshi"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="深圳"
+            android:textSize="@dimen/common_title_text_size_2"
+            android:textColor="@color/common_title_text_color"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_divide_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/common_divide_color"
+        />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_imgs"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/rl_title_bar">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_imgs"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+        </android.support.v4.view.ViewPager>
+        <cn.kyx.teacher.base.view.pi.CirclePageIndicator
+            android:id="@+id/cv_ad_indicator"
+            android:layout_width="80dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+
+        />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_imgs"
+        android:background="@color/common_white_background_color"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+    >
+        <TextView
+            android:id="@+id/tv_hour_rent"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:drawableLeft="@drawable/zujin"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:text="18"
+            android:textSize="18dp"
+            android:textColor="@color/common_color_green"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:drawablePadding="6dp"
+            android:layout_toRightOf="@id/tv_hour_rent"
+            android:gravity="center_vertical"
+            android:text="/时"
+            android:textSize="18dp"
+            android:textColor="@color/common_item_main_text_color"
+        />
+
+        <TextView
+            android:id="@+id/tv_day_rent"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+
+            android:drawablePadding="6dp"
+            android:layout_marginLeft="90dp"
+            android:gravity="center_vertical"
+            android:text="18"
+            android:textSize="18dp"
+            android:textColor="@color/common_color_green"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:drawablePadding="6dp"
+            android:layout_toRightOf="@id/tv_day_rent"
+            android:gravity="center_vertical"
+            android:text="/天"
+            android:textSize="18dp"
+            android:textColor="@color/common_item_main_text_color"
+        />
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:drawablePadding="6dp"
+            android:layout_below="@id/tv_hour_rent"
+            android:gravity="center_vertical"
+            android:text="里程费用 : "
+            android:textSize="15dp"
+            android:textColor="@color/common_item_main_text_color"
+        />
+
+        <TextView
+            android:id="@+id/tv_rent_mileage"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:drawablePadding="6dp"
+            android:layout_toRightOf="@id/tv_1"
+            android:layout_alignBottom="@id/tv_1"
+            android:gravity="center_vertical"
+            android:text="起步价 0 元"
+            android:textSize="15dp"
+            android:textColor="@color/common_item_main_text_color"
+        />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_car_decription" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_1"/>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_below="@id/rl_imgs"
+            android:background="@color/common_white_background_color"
+            android:paddingLeft="14dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+        >
+            <TextView
+                android:id="@+id/tv_hour_rent_2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:drawableLeft="@drawable/zujin"
+                android:drawablePadding="6dp"
+                android:gravity="center_vertical"
+                android:text="18"
+                android:textSize="18dp"
+                android:textColor="@color/common_color_green"
+            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:drawablePadding="6dp"
+                android:layout_toRightOf="@id/tv_hour_rent_2"
+                android:gravity="center_vertical"
+                android:text="/时"
+                android:textSize="18dp"
+                android:textColor="@color/common_item_main_text_color"
+            />
+
+            <TextView
+                android:id="@+id/tv_day_rent_2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+
+                android:drawablePadding="6dp"
+                android:layout_marginLeft="90dp"
+                android:gravity="center_vertical"
+                android:text="18"
+                android:textSize="18dp"
+                android:textColor="@color/common_color_green"
+            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:drawablePadding="6dp"
+                android:layout_toRightOf="@id/tv_day_rent_2"
+                android:gravity="center_vertical"
+                android:text="/天"
+                android:textSize="18dp"
+                android:textColor="@color/common_item_main_text_color"
+            />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@color/common_color_green"
+            android:gravity="center"
+            android:text="立即租用"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

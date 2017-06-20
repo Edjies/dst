@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudgray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hpx20"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@id/walletlist_listitem_all_infor_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx80"
+            android:paddingLeft="@dimen/wpx24"
+            android:paddingRight="@dimen/wpx24" >
+
+            <TextView
+                android:id="@id/walletlist_listitem_all_infor_note"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/gray4"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@id/walletlist_listitem_all_infor_money"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp18" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx1"
+            android:background="@color/line_gray" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx80"
+            android:paddingLeft="@dimen/wpx24"
+            android:paddingRight="@dimen/wpx24" >
+
+            <TextView
+                android:id="@id/walletlist_listitem_all_infor_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@id/walletlist_listitem_all_infor_yue"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp14"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/welcome_layout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/startup"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@id/welcome_images_vPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@color/transparent"
+        android:flipInterval="30"
+        android:overScrollMode="never"
+        android:persistentDrawingCache="animation"
+        android:visibility="gone"/>
+
+</FrameLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_return_money_record"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haofeng.apps.dst.ui.ReturnMoneyRecordActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/my_return_money_top_layout"
+        >
+
+        <TextView
+            android:id="@+id/my_return_money_record_back"
+            style="@style/back"/>
+
+        <TextView
+           style="@style/topTitle"
+            android:text="押金退款记录"
+            />
+    </FrameLayout>
+    <ListView
+        android:id="@+id/activity_return_money_record_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroudgray"
+        >
+
+    </ListView>
+</LinearLayout>

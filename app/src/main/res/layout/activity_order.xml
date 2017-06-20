@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudgray"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        style="@style/titlebackground"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx96"
+        android:layout_gravity="top" >
+
+        <TextView
+            android:id="@id/order_back"
+            style="@style/titlesmalltext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/wpx30"
+            android:background="@drawable/return_arrow" />
+
+        <TextView
+            style="@style/titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/add" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/wpx40"
+        android:paddingRight="@dimen/wpx40" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx100"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/orderdate"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@id/order_datetextview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="@string/click"
+                android:paddingLeft="@dimen/wpx10"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx100"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/startime"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@id/order_starttextview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="@string/click"
+                android:paddingLeft="@dimen/wpx10"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx100"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/endtime"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@id/order_endtextview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="@string/click"
+                android:paddingLeft="@dimen/wpx10"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@id/order_okbutton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx100"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/wpx60"
+        android:layout_marginRight="@dimen/wpx60"
+        android:layout_marginTop="@dimen/hpx50"
+        android:background="@drawable/chongdianyemian5_1_03"
+        android:text="@string/ok"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp18" />
+
+    <EditText
+        android:id="@id/order_markeditview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:visibility="gone" >
+
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>

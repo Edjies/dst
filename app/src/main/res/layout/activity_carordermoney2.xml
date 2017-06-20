@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/backgroudgray">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroudgray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@id/carordermoner2_top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="@dimen/hpx50">
+
+                <TextView
+                    android:id="@id/carordermoner2_back"
+                    style="@style/back"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx96"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="订单费用"
+                    android:textColor="@color/textgreen"
+                    android:textSize="@dimen/sp18"/>
+            </FrameLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fadingEdge="none"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:paddingTop="5dp"
+                            android:weightSum="1.0">
+
+                            <LinearLayout
+                                android:layout_width="0px"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="取车时间"
+                                    android:textColor="@color/gray4"
+                                    android:textSize="@dimen/sp16"/>
+
+                                <LinearLayout
+                                    android:id="@id/carordermoner2_quche_layout"
+                                    android:layout_width="@dimen/wpx300"
+                                    android:layout_height="@dimen/hpx130"
+                                    android:layout_marginTop="@dimen/hpx15"
+                                    android:background="@drawable/image_05"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@id/carordermoner2_quche_time"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:textColor="@color/textgreen"
+                                        android:textSize="@dimen/sp16"
+                                        android:visibility="gone"/>
+
+                                    <TextView
+                                        android:id="@id/carordermoner2_quche_week"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:textColor="@color/textgreen"
+                                        android:textSize="@dimen/sp16"
+                                        android:visibility="gone"/>
+
+                                    <TextView
+                                        android:id="@id/carordermoner2_quche_infor"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/qucheshijian2"
+                                        android:textColor="@color/gray"
+                                        android:textSize="@dimen/sp16"/>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0px"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="还车时间"
+                                    android:textColor="@color/gray4"
+                                    android:textSize="@dimen/sp16"/>
+
+                                <LinearLayout
+                                    android:id="@id/carordermoner2_haiche_layout"
+                                    android:layout_width="@dimen/wpx300"
+                                    android:layout_height="@dimen/hpx130"
+                                    android:layout_marginTop="@dimen/hpx15"
+                                    android:background="@drawable/image_05"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@id/carordermoner2_haiche_time"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:textColor="@color/textgreen"
+                                        android:textSize="@dimen/sp16"
+                                        android:visibility="gone"/>
+
+                                    <TextView
+                                        android:id="@id/carordermoner2_haiche_week"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:textColor="@color/textgreen"
+                                        android:textSize="@dimen/sp16"
+                                        android:visibility="gone"/>
+
+                                    <TextView
+                                        android:id="@id/carordermoner2_haiche_infor"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/haicheshijian2"
+                                        android:textColor="@color/gray"
+                                        android:textSize="@dimen/sp16"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/hpx1"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginTop="7dp"
+                            android:background="@color/line_gray"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="6dp">
+
+                            <TextView
+                                style="@style/car_order_money2_price_name"
+                                android:text="用车时长:"/>
+
+                            <TextView
+                                android:id="@+id/carordermoney_use_car_time"
+                                style="@style/car_order_money2_price"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="6dp">
+
+                            <TextView
+                                style="@style/car_order_money2_price_name"
+                                android:text="租车费用:"/>
+
+                            <TextView
+                                android:id="@+id/carordermoner2_rent_car_price"
+                                style="@style/car_order_money2_price"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="6dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/car_order_money2_price_name"
+                                android:text="里程费用:"/>
+
+                            <TextView
+                                android:id="@+id/carordermoner2_distance_price"
+                                style="@style/car_order_money2_price"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/hpx1"
+                            android:background="@color/line_gray"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="6dp">
+
+                            <TextView
+                                android:id="@+id/yajin"
+                                style="@style/car_order_money2_price_name"
+                                android:text="租车押金:"/>
+
+                            <TextView
+                                android:id="@+id/carordermoner2_rent_car_yajin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="8dp"
+                                android:layout_toRightOf="@id/yajin"
+                                android:textColor="@color/green"
+                                android:textSize="@dimen/sp16"
+                            />
+
+                            <TextView
+                                android:id="@+id/carordermoney_show_detail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:layout_toRightOf="@id/carordermoner2_rent_car_yajin"
+                                android:text="查看详情"
+                                android:textColor="@color/gray"
+                                android:textSize="12sp"/>
+                            <TextView
+                                android:id="@+id/carordermoney_yajin_detail"
+                                android:layout_width="28dp"
+                                android:layout_height="26dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="15dp"
+                                android:background="@drawable/detail"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="6dp">
+
+                            <TextView
+                                style="@style/car_order_money2_price_name"
+                                android:text="车辆保险"/>
+                            <TextView
+                                android:id="@+id/carordermoney_baoxian_detail"
+                                android:layout_width="28dp"
+                                android:layout_height="26dp"
+                                android:layout_marginLeft="240dp"
+                                android:background="@drawable/detail"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/hpx1"
+                            android:background="@color/line_gray"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="6dp">
+
+                            <TextView
+                                style="@style/car_order_money2_price_name"
+                                android:text="基本保险:"/>
+
+                            <TextView
+                                android:id="@+id/carordermoney2_base_baoxian"
+                                style="@style/car_order_money2_price"/>
+
+                            <CheckBox
+                                android:id="@+id/carordermoney_cb_base_baoxian"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/btn_radio_yuan"
+                                android:button="@null"
+                                android:checked="true"
+                            />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="6dp">
+
+                            <TextView
+                                style="@style/car_order_money2_price_name"
+                                android:text="不计免赔:"/>
+
+                            <TextView
+                                android:id="@+id/carordermoney2_bujimianpei"
+                                style="@style/car_order_money2_price"/>
+
+                            <CheckBox
+                                android:id="@+id/activity_carordermoney2_cb_bujimianpei"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/btn_radio_yuan"
+                                android:button="@null"
+                                android:checked="true"/><![CDATA[
+                            />
+                        ]]>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="200dp"
+                            android:orientation="horizontal"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp">
+
+                            <TextView
+                                android:id="@+id/carordermoney_baoxian_total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="合计:"
+                                android:textColor="@color/gray4"
+                                android:textSize="16sp"/>
+
+                            <TextView
+                                android:id="@+id/carordermoney_baoxian_total_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/green"
+                                android:textSize="16sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="网点信息"
+                            android:textColor="@color/gray4"
+                            android:textSize="@dimen/sp16"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hpx1"
+                        android:background="@color/line_gray"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="50dp">
+
+                        <!-- 请选择 -->
+
+                        <LinearLayout
+                            android:id="@+id/ordermoney2_select_adress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left|center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:text="取车/还车网点"
+                                android:textColor="@color/gray4"
+                                android:textSize="@dimen/sp16"/>
+
+                            <LinearLayout
+                                android:id="@id/carordermoner2_car_wangdianlayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:paddingRight="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:text="请选择"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/sp16"/>
+
+                                <ImageView
+                                    android:id="@id/carordermoner2_car_wangdianimage"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/wpx10"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/right"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/carordermoney2_get_and_huan_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="50dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <!-- 取车网点 -->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left|center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="取车网点:"
+                                    android:textColor="@color/gray4"
+                                    android:textSize="@dimen/sp16"/>
+
+                                <TextView
+                                    android:id="@+id/carordermoney2_quchewangdian"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:ellipsize="end"
+                                    android:paddingLeft="10dp"
+                                    android:text="111"
+                                    android:textColor="@color/gray4"
+                                    android:textSize="16sp"/>
+                            </LinearLayout>
+                            <!-- 还车网点 -->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left|center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="还车网点:"
+                                    android:textColor="@color/gray4"
+                                    android:textSize="@dimen/sp16"/>
+
+                                <TextView
+                                    android:id="@+id/carordermoney2_huanchewangdian"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:paddingLeft="10dp"
+                                    android:text="111"
+                                    android:textColor="@color/gray4"
+                                    android:textSize="16sp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/hpx20"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/hpx20">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/hpx70"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/wpx24"
+                            android:text="合计预付款"
+                            android:textColor="@color/gray4"
+                            android:textSize="@dimen/sp18"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/hpx1"
+                            android:background="@color/line_gray"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/wpx24"
+                            android:paddingRight="@dimen/wpx24">
+
+                            <TextView
+                                android:id="@id/carordermoner2_infor_money"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="@color/textgreen"
+                                android:textSize="@dimen/sp30"/>
+
+                            <TextView
+                                android:id="@id/carordermoner2_infor_infor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/hpx40"
+                                android:gravity="center"
+                                android:paddingBottom="20dp"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/sp14"/>
+                            <LinearLayout android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:layout_marginBottom="50dp"
+                                          android:orientation="horizontal">
+                                <CheckBox
+                                    android:id="@+id/carordermoney2_agree"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:background="@drawable/btn_radio_yuan"
+                                    android:button="@null"
+                                    android:checked="true"
+                                />
+                                <TextView android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:text="我已阅读并同意《租车条款》"/>
+                                <TextView
+                                    android:id="@+id/carordermoney2_agree_detail"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="查看详情"
+                                    android:textColor="@color/yellow2"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@id/carordermoner2_tijiaodindgan"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx100"
+            android:layout_gravity="bottom"
+            android:background="@color/yellow2"
+            android:gravity="center"
+            android:text="@string/tijiaodingdan"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18"
+        />
+        <FrameLayout
+            android:id="@id/carordermoner2_date_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent_black"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx100"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/wpx20"
+                    android:paddingRight="@dimen/wpx20"
+                    android:weightSum="1.0">
+
+                    <TextView
+                        android:id="@id/carordermoner2_date_cancel"
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.33"
+                        android:gravity="center_vertical"
+                        android:text="@string/quxiao"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/sp18"/>
+
+                    <TextView
+                        android:id="@id/carordermoner2_date_type"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/sp18"/>
+
+                    <TextView
+                        android:id="@id/carordermoner2_date_ok"
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.33"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/ok"
+                        android:textColor="@color/textgreen"
+                        android:textSize="@dimen/sp18"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx1"
+                    android:background="@color/line_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx450"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0">
+
+                    <LinearLayout
+                        android:id="@id/carordermoner2_date_picklayout"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/hpx450"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@id/carordermoner2_date_picklayout2"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/hpx450"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+</FrameLayout>

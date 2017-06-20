@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudgray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@id/chargeend_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:id="@id/chargeend_back"
+                style="@style/back" />
+
+            <TextView
+                android:id="@id/chargeend_title"
+                android:text="@string/charge_stop"
+                style="@style/topTitle" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx1"
+            android:background="@color/line_gray" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx80"
+                    android:layout_marginTop="@dimen/hpx20"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/wpx24"
+                    android:paddingRight="@dimen/wpx24" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/dingdanbiaohao"
+                            android:textColor="@color/textgreen"
+                            android:textSize="@dimen/sp16" />
+
+                        <TextView
+                            android:id="@id/chargeend_chargenumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/wpx10"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/textgreen"
+                            android:textSize="@dimen/sp16" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@id/chargeend_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textgreen"
+                        android:textSize="@dimen/sp16" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx80"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/wpx24"
+                    android:paddingRight="@dimen/wpx24" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/dingdanjine"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:id="@id/chargeend_chargemoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/wpx10"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textgreen"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hpx20"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/hpx80"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/wpx24"
+                        android:paddingRight="@dimen/wpx24"
+                        android:text="@string/chongdianxinxi"
+                        android:textColor="@color/textgreen"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hpx1"
+                        android:background="@color/line_gray" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hpx70"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/wpx24"
+                        android:paddingRight="@dimen/wpx24" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:gravity="center_vertical"
+                            android:text="@string/chongdianzhanmingcheng2"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+
+                        <TextView
+                            android:id="@id/chargeend_dianzhanmingchen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="@dimen/wpx10"
+                            android:gravity="center"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hpx70"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/wpx24"
+                        android:paddingRight="@dimen/wpx24" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:gravity="center_vertical"
+                            android:text="@string/dianzhuangbianhao2"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+
+                        <TextView
+                            android:id="@id/chargeend_dianzhuangbianhao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="@dimen/wpx10"
+                            android:gravity="center"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hpx70"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/wpx24"
+                        android:paddingRight="@dimen/wpx24" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:gravity="center_vertical"
+                            android:text="@string/startime2"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+
+                        <TextView
+                            android:id="@id/chargeend_chargestarttime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="@dimen/wpx10"
+                            android:gravity="center"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hpx70"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/wpx24"
+                        android:paddingRight="@dimen/wpx24" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:gravity="center_vertical"
+                            android:text="@string/endtime2"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+
+                        <TextView
+                            android:id="@id/chargeend_chargeendtime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="@dimen/wpx10"
+                            android:gravity="center"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hpx70"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/wpx24"
+                        android:paddingRight="@dimen/wpx24" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:gravity="center_vertical"
+                            android:text="@string/chongdianshichang"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+
+                        <TextView
+                            android:id="@id/chargeend_shichang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="@dimen/wpx10"
+                            android:gravity="center"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hpx70"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/wpx24"
+                        android:paddingRight="@dimen/wpx24" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:gravity="center_vertical"
+                            android:text="@string/yichongdianliang"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+
+                        <TextView
+                            android:id="@id/chargeend_power"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="@dimen/wpx10"
+                            android:gravity="center"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hpx20"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/hpx80"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/wpx24"
+                        android:paddingRight="@dimen/wpx24"
+                        android:text="@string/feiyongxinxi"
+                        android:textColor="@color/textgreen"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hpx1"
+                        android:background="@color/line_gray" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hpx70"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/wpx24"
+                        android:paddingRight="@dimen/wpx24" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:gravity="center_vertical"
+                            android:text="@string/chongdianjiner3"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+
+                        <TextView
+                            android:id="@id/chargeend_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="@dimen/wpx10"
+                            android:gravity="center"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hpx70"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/wpx24"
+                        android:paddingRight="@dimen/wpx24" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:gravity="center_vertical"
+                            android:text="@string/fuwufei"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+
+                        <TextView
+                            android:id="@id/chargeend_money_fuwu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="@dimen/wpx10"
+                            android:gravity="center"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hpx70"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/wpx24"
+                        android:paddingRight="@dimen/wpx24" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:gravity="center_vertical"
+                            android:text="@string/tingchefei"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+
+                        <TextView
+                            android:id="@id/chargeend_money_tingche"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="@dimen/wpx10"
+                            android:gravity="center"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hpx70"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/wpx24"
+                        android:paddingRight="@dimen/wpx24" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:gravity="center_vertical"
+                            android:text="@string/xiaofeihouyue"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+
+                        <TextView
+                            android:id="@id/chargeend_chargeendmoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="@dimen/wpx10"
+                            android:gravity="center"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/chargeend_feiyongqueren_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx100"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx1"
+            android:background="@color/line_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/wpx20" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/hejifeiyong"
+                    android:textColor="@color/textgreen"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@id/chargeend_feiyongqueren_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textgreen"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/chargeend_feiyongqueren"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:background="@color/yellow2"
+                android:gravity="center"
+                android:text="@string/queren"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp18" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

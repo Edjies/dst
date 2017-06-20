@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/bg">
+    <TextView
+        android:id="@+id/login_back"
+        style="@style/back"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/hpx210"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@id/login_phoneedit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx100"
+            android:layout_marginLeft="@dimen/wpx60"
+            android:layout_marginRight="@dimen/wpx60"
+            android:background="@color/transparent"
+            android:drawableLeft="@drawable/phone"
+            android:drawablePadding="@dimen/wpx10"
+            android:ems="11"
+            android:hint="@string/input_phone"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingLeft="@dimen/wpx10"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/sp16">
+
+            <requestFocus/>
+        </EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx1"
+            android:layout_marginLeft="@dimen/wpx60"
+            android:layout_marginRight="@dimen/wpx60"
+            android:background="@color/login_line_gray"/>
+
+        <EditText
+            android:id="@id/login_pwdedit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx100"
+            android:layout_marginLeft="@dimen/wpx60"
+            android:layout_marginRight="@dimen/wpx60"
+            android:background="@color/transparent"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="@dimen/wpx10"
+            android:ems="10"
+            android:hint="@string/input_pwd"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLength="16"
+            android:paddingLeft="@dimen/wpx10"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/sp16"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx1"
+            android:layout_marginLeft="@dimen/wpx60"
+            android:layout_marginRight="@dimen/wpx60"
+            android:background="@color/login_line_gray"/>
+
+        <Button
+            android:id="@id/login_okbutton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx100"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/wpx60"
+            android:layout_marginRight="@dimen/wpx60"
+            android:layout_marginTop="@dimen/hpx60"
+            android:background="@drawable/bt_green"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hpx60"
+            android:paddingLeft="@dimen/wpx60"
+            android:paddingRight="@dimen/wpx60">
+
+            <TextView
+                android:id="@id/login_forgettextview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:text="@string/forgetpwd"
+                android:textColor="@color/textgreen"
+                android:textSize="@dimen/sp14"/>
+
+            <TextView
+                android:id="@id/login_registtextview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:text="@string/regist2"
+                android:textColor="@color/textgreen"
+                android:textSize="@dimen/sp14"/>
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

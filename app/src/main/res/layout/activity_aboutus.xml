@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgroudgray"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@id/aboutus_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+    >
+
+        <TextView
+            android:id="@id/aboutus_back"
+            style="@style/back"/>
+
+        <TextView
+            style="@style/topTitle" android:text="关于我们"/>
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/hpx40"
+        android:layout_marginTop="20dp"
+        android:scaleType="center"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@id/aboutus_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:lineSpacingExtra="@dimen/hpx15"
+        android:text="@string/us"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp16"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hpx180"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/aboutus_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp16"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aboutus2"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp16"/>
+    </LinearLayout>
+
+</LinearLayout>

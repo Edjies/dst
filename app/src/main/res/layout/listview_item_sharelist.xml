@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudgray"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@id/sharelist_listitem_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx60"
+        android:layout_marginTop="@dimen/hpx20" >
+
+        <TextView
+            android:id="@id/sharelist_listitem_infor_share_cound"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/wpx10"
+            android:gravity="center_vertical"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@id/sharelist_listitem_infor_approve_status"
+            android:layout_width="@dimen/wpx200"
+            android:layout_height="@dimen/hpx60"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/wpx10"
+            android:background="@drawable/share_checking"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/wpx15"
+        android:paddingRight="@dimen/wpx15" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx60"
+            android:baselineAligned="true"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/lianjiefangshi"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@id/sharelist_listitem_infor_connection_type_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/wpx5"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@id/sharelist_listitem_infor_connection_type_image"
+                    android:layout_width="@dimen/wpx30"
+                    android:layout_height="@dimen/hpx30"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/wpx5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/shengchanchangjia"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@id/sharelist_listitem_infor_manufacturer_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/wpx5"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx60"
+            android:baselineAligned="true"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/chongdianleixing"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@id/sharelist_listitem_infor_charge_type_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/wpx5"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@id/sharelist_listitem_infor_charge_type_image"
+                    android:layout_width="@dimen/wpx30"
+                    android:layout_height="@dimen/hpx30"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/wpx5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/anzhuangfangshi"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@id/sharelist_listitem_infor_install_type_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/wpx5"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx60"
+            android:baselineAligned="true"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/chongdianxianchang"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@id/sharelist_listitem_infor_wire_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/wpx5"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/dianqiangshuliang"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@id/sharelist_listitem_infor_charge_gun_nums"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/wpx5"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx60"
+            android:baselineAligned="true"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/xinghao"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@id/sharelist_listitem_infor_model_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/wpx5"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/guigecanshu"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@id/sharelist_listitem_infor_specification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/wpx5"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx60"
+            android:baselineAligned="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/changjiabianhao"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@id/sharelist_listitem_infor_code_from_factory"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/wpx5"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/hpx60"
+                android:gravity="center_vertical"
+                android:text="@string/dizhi"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@id/sharelist_listitem_infor_install_site"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="@dimen/hpx10"
+                android:paddingLeft="@dimen/wpx5"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/line" />
+
+        <LinearLayout
+            android:id="@id/sharelist_listitem_infor_shenhebeizhulayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/hpx60"
+                android:gravity="center_vertical"
+                android:text="@string/shenhebeizhu"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@id/sharelist_listitem_infor_approve_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="@dimen/hpx10"
+                android:paddingLeft="@dimen/wpx5"
+                android:textColor="@color/red"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@id/sharelist_listitem_infor_imageline2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/line" />
+
+        <LinearLayout
+            android:id="@id/sharelist_listitem_infor_shenheshijianlayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx60"
+            android:baselineAligned="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/shenheshijian"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@id/sharelist_listitem_infor_approve_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/wpx5"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx80" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:baselineAligned="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/fenxiangshijian"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@id/sharelist_listitem_infor_share_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/wpx5"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@id/sharelist_listitem_delete"
+                android:layout_width="@dimen/wpx30"
+                android:layout_height="@dimen/hpx30"
+                android:layout_gravity="right|center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/mycar_shanchu" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@id/listview_item_news_infor_listview_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="true"
+        android:padding="@dimen/wpx10" >
+
+        <TextView
+            android:id="@id/listview_item_news_infor_listview_item_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@id/listview_item_news_infor_listview_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/hpx130"
+            android:paddingLeft="@dimen/wpx20"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16" />
+
+        <ImageView
+            android:id="@id/listview_item_news_infor_listview_item_image"
+            android:layout_width="@dimen/wpx120"
+            android:layout_height="@dimen/hpx120"
+            android:layout_gravity="right|center_vertical"
+            android:scaleType="fitXY" />
+    </FrameLayout>
+
+</LinearLayout>

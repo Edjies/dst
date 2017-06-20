@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_order_no"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:text="需求单号 ："
+        android:textSize="15dp"
+        android:textColor="@color/common_color_green"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/icon_success"
+        android:scaleType="center"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:text="提交成功"
+        android:textSize="25dp"
+        android:textColor="@color/common_item_main_text_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:text="感谢您预订车辆，我们将在一个工作日内联系您"
+        android:textSize="15dp"
+        android:textColor="@color/common_item_sub_text_color"/>
+
+    <TextView
+        android:id="@+id/tv_query"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="18dp"
+        android:gravity="center_vertical"
+        android:text=">>查看我的申请"
+        android:textSize="15dp"
+        android:textColor="@color/common_color_green"/>
+
+    <TextView
+        android:id="@+id/tv_return"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="18dp"
+        android:gravity="center_vertical"
+        android:text=">>返回首页"
+        android:textSize="15dp"
+        android:textColor="@color/common_color_green"/>
+
+
+</LinearLayout>

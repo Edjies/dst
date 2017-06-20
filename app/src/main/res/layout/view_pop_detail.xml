@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/view_pop_detail_power_card_get_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:text="电卡提现"
+        android:textColor="@color/gray4"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#44000000"/>
+
+    <TextView
+        android:id="@+id/view_pop_detail_yajin_congzhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:text="押金充值"
+        android:textColor="@color/gray4"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#44000000"/>
+
+    <TextView
+        android:id="@+id/view_pop_detail_yajin_tuikuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:text="押金退款"
+        android:textColor="@color/gray4"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#44000000"/>
+
+    <TextView
+        android:id="@+id/view_pop_detail_huanche_koukuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:text="还车扣款"
+        android:textColor="@color/gray4"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#44000000"/>
+
+    <TextView
+        android:id="@+id/view_pop_detail_weizhang_koukuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:text="违章扣款"
+        android:textColor="@color/gray4"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#44000000"/>
+
+    <TextView
+        android:id="@+id/view_pop_detail_concel_rent_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:text="取消租车"
+        android:textColor="@color/gray4"
+        android:textSize="16sp"/>
+
+</LinearLayout>

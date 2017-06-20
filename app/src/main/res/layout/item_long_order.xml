@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <!--提车状态-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/common_white_background_color">
+        <TextView
+            android:id="@+id/tv_order_no"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="18dp"
+            android:text="需求单号"
+            android:textSize="14dp"
+            android:textColor="@color/common_color_green"
+        />
+
+        <TextView
+            android:id="@+id/tv_order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:gravity="center_vertical"
+            android:textSize="14dp"
+            android:text="07-27"
+            android:textColor="@color/common_item_sub_text_color"
+
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_divide_height"
+            android:background="@color/common_color_green"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+        />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/common_white_background_color">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/zuyong"
+            android:drawablePadding="5dp"
+            android:text="申请数量"
+            android:textSize="13dp"
+            android:textColor="@color/common_item_main_text_color"/>
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="18dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="10台"
+            android:textSize="13dp"
+            android:textColor="@color/common_item_sub_text_color"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_extra"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/common_white_background_color">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/xiangqing_open_time"
+            android:drawablePadding="8dp"
+            android:text="预计提车时间"
+            android:textSize="13dp"
+            android:textColor="@color/common_item_main_text_color"/>
+
+        <TextView
+            android:id="@+id/tv_pick_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="18dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="09-13 08:00"
+            android:textSize="13dp"
+            android:textColor="@color/common_item_sub_text_color"/>
+
+    </RelativeLayout>
+
+    <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/common_white_background_color"
+    >
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:gravity="center_vertical"
+            android:text="地上铁"
+            android:textSize="13dp"
+            android:textColor="@color/common_item_sub_text_color"
+
+        />
+
+        <RelativeLayout
+            android:id="@+id/rl_amount_extra"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+        >
+            <TextView
+                android:id="@+id/tv_amount_extra_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="待支付租金"
+                android:textSize="13dp"
+                android:textColor="@color/common_item_sub_text_color"
+
+            />
+
+            <TextView
+                android:id="@+id/tv_amount_extra_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/tv_amount_extra_1"
+                android:gravity="center_vertical"
+                android:text="订单详情>>"
+                android:textSize="13dp"
+                android:textColor="@color/common_item_sub_text_color"
+
+            />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_marginLeft="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/changzuzhuanyuandianhua"
+            android:text="等待响应..."
+            android:textSize="13dp"
+            android:textColor="@color/common_color_yellow"
+
+        />
+    </RelativeLayout>
+
+    <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color"/>
+    <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_tab_height" android:background="@color/common_gray_background_color"/>
+
+</LinearLayout>

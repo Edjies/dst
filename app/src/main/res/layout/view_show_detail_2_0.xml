@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/view_show_detail_close"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_gravity="right"
+        android:layout_margin="3dp"
+        android:background="@drawable/close_show_dialog"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您当前有"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/view_show_detail_wz_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textColor="#F2C326"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="次待处理违章记录"
+                android:textColor="@color/gray"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx1"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/line_gray"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TableRow android:padding="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="待处理违章押金暂时扣用:"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/view_show_detail_wz_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/gray"/>
+        </TableRow>
+
+        <TableRow android:padding="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="押金账户可用余额:"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/view_show_detail_yajin_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/gray"/>
+        </TableRow>
+
+        <TableRow android:padding="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="本次租用车型的租车押金:"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/view_show_detail_car_yajin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/gray"/>
+        </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx1"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/line_gray"/>
+
+        <TableRow android:padding="4dp">
+
+            <TextView
+                android:id="@+id/view_show_detail_fill_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="故本次租车不额外收取车辆押金"
+                android:textColor="@color/gray"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx1"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/line_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dp"
+        android:text="为了您接下来能更好的使用地上铁车辆"
+        android:textColor="@color/gray"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dp"
+        android:text="请及时处理您的违章!"
+        android:textColor="@color/gray"
+        android:textSize="12sp"/>
+
+</LinearLayout>

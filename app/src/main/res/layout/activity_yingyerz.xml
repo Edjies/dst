@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudgray"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@id/yingyerz_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@id/yingyerz_back"
+            style="@style/back"/>
+
+        <TextView
+            android:text="@string/huiyuanrenzheng"
+            style="@style/topTitle" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hpx20"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/hpx24"
+        android:paddingLeft="@dimen/wpx24"
+        android:paddingRight="@dimen/wpx24" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx80"
+            android:gravity="center_vertical"
+            android:text="@string/yingyeinfor"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp16" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx300" >
+
+            <ImageView
+                android:id="@id/yingyerz_shenfenzheng_image2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx300"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@id/yingyerz_shenfenzheng_image"
+                android:layout_width="@dimen/wpx270"
+                android:layout_height="@dimen/hpx233"
+                android:layout_gravity="center"
+                android:src="@drawable/images2_03" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/hpx20"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/wpx24"
+        android:paddingRight="@dimen/wpx24" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx80"
+            android:gravity="center_vertical"
+            android:text="@string/yingyeinfor2"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@id/yingyerz_shenfenzheng_infor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/hpx60"
+            android:textSize="@dimen/sp14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hpx300"
+            android:src="@drawable/images2_07" />
+
+        <TextView
+            android:id="@id/yingyerz_ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx100"
+            android:layout_marginLeft="@dimen/wpx60"
+            android:layout_marginRight="@dimen/wpx60"
+            android:layout_marginTop="@dimen/hpx40"
+            android:background="@drawable/bt_green"
+            android:gravity="center"
+            android:text="@string/tijiaorenzheng"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18" />
+    </LinearLayout>
+
+</LinearLayout>

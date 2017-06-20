@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 显示拍摄图像 -->
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+    <!-- 扫码框 -->
+
+    <com.haofeng.apps.dst.saoma.view.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@color/transparent" />
+
+    <LinearLayout
+        android:id="@id/capture_bottominforlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/hpx75"
+            android:layout_marginLeft="@dimen/wpx50"
+            android:layout_marginRight="@dimen/wpx50"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="扫码成功后即可启动电桩开始充电"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14" />
+        <!-- 手电筒 -->
+
+        <TextView
+            android:id="@id/capture_light"
+            android:layout_width="@dimen/wpx100"
+            android:layout_height="@dimen/hpx100"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/hpx75"
+            android:background="@drawable/light_on" />
+
+        <TextView
+            android:id="@id/capture_input"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx100"
+            android:layout_marginBottom="@dimen/hpx120"
+            android:layout_marginLeft="@dimen/wpx50"
+            android:layout_marginRight="@dimen/wpx50"
+            android:background="@drawable/bt_green"
+            android:gravity="center"
+            android:text="切换为输入电桩编号充电"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+    </LinearLayout>
+    <!-- 顶部显示 -->
+
+    <FrameLayout
+        android:id="@id/capture_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@color/black"
+        >
+
+        <!-- 返回 -->
+
+        <TextView
+            android:id="@id/capture_back"
+            style="@style/back" />
+
+        <TextView
+            android:id="@id/capture_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/textgreen"
+            android:textSize="@dimen/sp18" />
+    </FrameLayout>
+
+</FrameLayout>

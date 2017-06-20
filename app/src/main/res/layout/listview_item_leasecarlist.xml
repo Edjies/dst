@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/hpx150"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/wpx40"
+    android:paddingRight="@dimen/wpx30" >
+
+    <TextView
+        android:id="@id/leasecarlist_listitem_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@id/leasecarlist_listitem_infor_vehicle_dentification_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@id/leasecarlist_listitem_infor_month_rent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@id/leasecarlist_listitem_infor_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp16" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/wpx30"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/wpx10" >
+
+            <ImageView
+                android:id="@id/leasecarlist_listitem_infor_image"
+                android:layout_width="@dimen/wpx54"
+                android:layout_height="@dimen/hpx54"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@id/leasecarlist_listitem_infor_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/wpx20"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@id/leasecarlist_listitem_infor_plate_number"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/wpx30"
+                    android:layout_height="@dimen/hpx30"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/lent_time" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/wpx10"
+                    android:gravity="center_vertical"
+                    android:text="@string/zucheshijian"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@id/leasecarlist_listitem_infor_let_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/wpx10"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/wpx36"
+        android:layout_height="@dimen/hpx36"
+        android:layout_gravity="right|center_vertical"
+        android:scaleType="fitXY"
+        android:src="@drawable/arrow" />
+
+</FrameLayout>

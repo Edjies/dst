@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudgray"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@id/changepwd_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/hpx50" >
+
+        <TextView
+            android:id="@id/changepwd_backtextview"
+            style="@style/back" />
+
+        <TextView
+            android:text="@string/changepwd"
+           style="@style/topTitle" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx300"
+        android:layout_marginTop="@dimen/hpx20"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@id/changepwd_oldedit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx100"
+            android:background="@drawable/lines"
+            android:ems="10"
+            android:hint="@string/input_oldpwd"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/wpx30"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/sp16" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@id/changepwd_newedit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx100"
+            android:background="@drawable/lines"
+            android:ems="10"
+            android:hint="@string/input_newpwd"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/wpx30"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/sp16" />
+
+        <EditText
+            android:id="@id/changepwd_newedit2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx100"
+            android:background="@drawable/lines"
+            android:ems="10"
+            android:hint="@string/input_newpwd2"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/wpx30"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/sp16" />
+    </LinearLayout>
+
+    <Button
+        android:id="@id/changepwd_okbutton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx100"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/wpx60"
+        android:layout_marginRight="@dimen/wpx60"
+        android:layout_marginTop="@dimen/hpx50"
+        android:background="@drawable/bt_green"
+        android:gravity="center"
+        android:text="@string/ok"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp18" />
+
+</LinearLayout>

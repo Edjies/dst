@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroudgray"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/activity_submit_rent_car_order_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <TextView
+                style="@style/topTitle"
+                android:text="立即租用"
+            />
+            <ImageButton
+                android:id="@+id/activity_submit_rent_car_order_back"
+                style="@style/back"/>
+        </FrameLayout>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@color/line_gray"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@color/white"
+                      android:orientation="horizontal">
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:gravity="right"
+                          android:orientation="horizontal"
+                          android:paddingBottom="20dp"
+                          android:paddingTop="20dp">
+
+                <Button
+                    android:id="@+id/activity_submit_rent_car_order_rent_type_time_button"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/shape_left_radius_stroke"
+                    android:gravity="center"
+                    android:text="时租(29元/小时)"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:gravity="left"
+                          android:orientation="horizontal"
+                          android:paddingBottom="20dp"
+                          android:paddingTop="20dp">
+                <Button
+                    android:id="@+id/activity_submit_rent_car_order_rent_type_day_button"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/shape_right_radius_stroke"
+                    android:gravity="center"
+                    android:text="日租(299元/小时)"
+                    android:textColor="@color/textdeepgreen"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="10dp"
+                       android:background="@drawable/quche"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="取车门店:"
+                android:textColor="@color/gray4"
+                android:textSize="@dimen/sp14"/>
+            <FrameLayout android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="10dp"
+                         android:paddingRight="15dp">
+
+                <LinearLayout
+                    android:id="@+id/activity_submit_rent_car_order_qc_adress_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="请选择"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/sp14"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/right"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/activity_submit_rent_car_order_selected_qc_adress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp14"
+                    android:visibility="gone"/>
+            </FrameLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="10dp"
+                       android:background="@drawable/huanche"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="还车门店:"
+                android:textColor="@color/gray4"
+                android:textSize="@dimen/sp14"/>
+            <FrameLayout android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="10dp"
+                         android:paddingRight="15dp">
+                <LinearLayout
+                    android:id="@+id/activity_submit_rent_car_order_hc_adress_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="请选择"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/sp14"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/right"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/activity_submit_rent_car_order_selected_hc_adress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp14"
+                    android:visibility="gone"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="10dp">
+            <ImageView
+                android:id="@+id/activity_submit_rent_car_order_quche_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/quhuanshijian"/>
+            <FrameLayout
+                android:id="@+id/activity_submit_rent_car_order_quche_time_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/activity_submit_rent_car_order_quche_image">
+                <LinearLayout
+                    android:id="@+id/activity_submit_rent_car_order_quche_time_no_selected_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                >
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_gravity="center_horizontal"
+                              android:layout_marginBottom="2dp"
+                              android:text="选择"
+                              android:textColor="@color/gray"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="2dp"
+                              android:text="取车时间"
+                              android:textColor="@color/gray"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/activity_submit_rent_car_order_quche_time_selected_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                >
+                    <TextView
+                        android:id="@+id/activity_submit_rent_car_order_quche_time_selected_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="2dp"
+                        android:text="05-25"
+                        android:textColor="@color/gray4"
+                        android:textSize="22sp"/>
+                    <TextView
+                        android:id="@+id/activity_submit_rent_car_order_quche_time_selected_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="周四 10:00"
+                        android:textColor="@color/gray"/>
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_centerInParent="true"
+                          android:orientation="vertical">
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_gravity="center"
+                              android:gravity="center_vertical"
+                              android:orientation="horizontal"
+                >
+                    <TextView
+                        android:id="@+id/activity_submit_rent_car_order_time_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textdeepgreen"
+                        android:textSize="22sp"/>
+                    <TextView
+                        android:id="@+id/activity_submit_rent_car_order_show_dangwei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="小时"/>
+                </LinearLayout>
+                <ImageView android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center_vertical"
+                           android:background="@drawable/shichangjiantou"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/activity_submit_rent_car_order_huche_time_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="27dp">
+                <LinearLayout
+                    android:id="@+id/activity_submit_rent_car_order_huche_time_no_selected_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+
+                >
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_gravity="center_horizontal"
+                              android:layout_marginBottom="2dp"
+                              android:text="选择"
+                              android:textColor="@color/gray"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="2dp"
+                              android:text="还车时间"
+                              android:textColor="@color/gray"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/activity_submit_rent_car_order_huanche_time_selected_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/activity_submit_rent_car_order_huanche_time_selected_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="2dp"
+                        android:text="05-25"
+                        android:textColor="@color/gray4"
+                        android:textSize="22sp"/>
+                    <TextView
+                        android:id="@+id/activity_submit_rent_car_order_huanche_time_selected_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="周四 10:00"
+                        android:textColor="@color/gray"/>
+                </LinearLayout>
+
+            </FrameLayout>
+        </RelativeLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@color/white"
+                      android:gravity="center_horizontal"
+                      android:orientation="vertical">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_marginTop="30dp"
+                      android:text="预计租金"
+                      android:textColor="@color/gray4"/>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_horizontal"
+                          android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/activity_submit_rent_car_order_total_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FEB52A"
+                    android:textSize="24sp"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="元"
+                />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/activity_submit_rent_car_order_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:text="注：按照您目前的价格，建议选择更优惠的日租套餐"
+                android:textColor="@color/gray"
+                android:textSize="12sp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"/>
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom|center_horizontal">
+            <Button
+                android:id="@+id/activity_submit_rent_car_order_shengqing_tiche"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="120dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/selector_radius_green"
+                android:text="申请提车"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/car_shengqin_date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_black"
+        android:clickable="true"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx100"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/wpx20"
+                android:paddingRight="@dimen/wpx20"
+                android:weightSum="1.0">
+
+                <TextView
+                    android:id="@+id/car_shengqin_date_cancel"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:gravity="center_vertical"
+                    android:text="@string/quxiao"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/sp18"/>
+
+                <TextView
+                    android:id="@+id/car_shengqin_date_type"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/sp18"/>
+
+                <TextView
+                    android:id="@+id/car_shengqin_date_ok"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/ok"
+                    android:textColor="@color/textgreen"
+                    android:textSize="@dimen/sp18"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx1"
+                android:background="@color/line_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx450"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <LinearLayout
+                    android:id="@+id/car_shengqin_date_pickLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/hpx450"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/car_shengqin_time_pickLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/hpx450"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

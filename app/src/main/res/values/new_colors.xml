@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="common_status_bar_background">#FFFFFF</color>
+    <color name="common_title_bar_background">#FFFFFF</color>
+    <color name="common_title_text_color">#11A36A</color>
+    <color name="common_divide_color">#dddddd</color>
+    <color name="common_gray_background_color">#ffeeeeee</color>
+    <color name="common_white_background_color">#ffffff</color>
+    <color name="common_item_main_text_color">#50515e</color>
+    <color name="common_item_sub_text_color">#a1a1a1</color>
+
+
+    <color name="common_color_green">#FF11A36A</color>
+    <color name="common_color_green_pressed">#1FAF6F</color>
+    <color name="common_color_unenabled">#A5A5A5</color>
+    <color name="common_color_yellow">#FFB728</color>
+    <color name="common_color_white">#FFFFFFFF</color>
+</resources>

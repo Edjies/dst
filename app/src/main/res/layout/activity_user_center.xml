@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_gray_background_color"
+>
+    <TextView
+        android:id="@+id/tv_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_status_bar_height"
+        android:background="@drawable/person_status_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_height"
+        android:layout_below="@id/tv_status_bar"
+        android:background="@drawable/person_title_bar">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/common_title_padding_left"
+            android:paddingRight="@dimen/common_title_padding_right"
+            android:src="@drawable/fanhui"
+            android:scaleType="center"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="会员中心"
+            android:textColor="@color/common_color_white"
+            android:textSize="@dimen/common_title_text_size"/>
+
+        <ImageView
+            android:id="@+id/iv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/common_title_padding_left"
+            android:paddingRight="@dimen/common_title_padding_right"
+            android:src="@drawable/xiaoxiw"
+            android:scaleType="center"
+        />
+
+        <TextView
+            android:id="@id/tab_user_news_number"
+            android:layout_width="@dimen/wpx20"
+            android:layout_height="@dimen/wpx20"
+            android:layout_gravity="top|right"
+            android:layout_alignTop="@id/iv_message"
+            android:layout_toRightOf="@id/iv_message"
+            android:visibility="gone"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/tip"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_title_bar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/view_user_score"/>
+
+            <include layout="@layout/view_user_info_2"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_tab_height" android:background="@color/common_gray_background_color"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color"/>
+
+            <include layout="@layout/view_user_menu"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

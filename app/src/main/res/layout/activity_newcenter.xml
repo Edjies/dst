@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgroudgray"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@id/newscenter_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+       >
+
+        <TextView
+            android:id="@id/newscenter_back"
+            style="@style/back"/>
+
+        <TextView
+            style="@style/topTitle"
+            android:text="@string/xiaoxizhongxin"/>
+    </FrameLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@id/newscenter_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@drawable/line"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"/>
+
+</LinearLayout>

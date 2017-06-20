@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/common_white_background_color">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="  企业名称"
+            android:textSize="14dp"
+            android:textColor="@color/common_item_main_text_color"
+        />
+
+        <EditText
+            android:id="@+id/et_company_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="18dp"
+            android:background="@android:color/transparent"
+            android:hint="企业名称"
+            android:text=""
+            android:textSize="14dp"
+            android:textColorHint="@color/common_item_sub_text_color"
+            android:textColor="@color/common_item_main_text_color"
+        />
+
+        <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_tab_height" android:background="@color/common_gray_background_color"/>
+    <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="* 联系人姓名"
+            android:textSize="14dp"
+            android:textColor="@color/common_item_main_text_color"
+        />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="18dp"
+            android:background="@android:color/transparent"
+            android:hint="联系人姓名"
+            android:text=""
+            android:textSize="14dp"
+            android:textColorHint="@color/common_item_sub_text_color"
+            android:textColor="@color/common_item_main_text_color"
+        />
+
+        <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="* 联系人手机"
+            android:textSize="14dp"
+            android:textColor="@color/common_item_main_text_color"
+        />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="18dp"
+            android:background="@android:color/transparent"
+            android:hint="联系人手机"
+            android:inputType="phone"
+            android:text=""
+            android:textSize="14dp"
+            android:textColorHint="@color/common_item_sub_text_color"
+            android:textColor="@color/common_item_main_text_color"
+        />
+
+        <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="  电子邮件"
+            android:textSize="14dp"
+            android:textColor="@color/common_item_main_text_color"
+        />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="18dp"
+            android:background="@android:color/transparent"
+            android:hint="电子邮件"
+            android:inputType="textEmailAddress"
+            android:text=""
+            android:textSize="14dp"
+            android:textColorHint="@color/common_item_sub_text_color"
+            android:textColor="@color/common_item_main_text_color"
+        />
+
+        <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:gravity="center_vertical"
+        android:background="@color/common_gray_background_color"
+        android:text="带 '*' 的选项为必填项"
+        android:textSize="12dp"
+        android:textColor="@color/common_item_sub_text_color"/>
+
+</LinearLayout>

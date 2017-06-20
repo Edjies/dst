@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FAFAFA"
+              android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/acitivty_mycar_association_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/my_mycar_back"
+            style="@style/back"/>
+
+        <TextView
+            android:text="我的车辆"
+          style="@style/topTitle"/>
+
+        <TextView
+            android:id="@+id/acitivty_mycar_add_car"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/add"
+        />
+    </FrameLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="1px" android:background="@color/line_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/acitivty_myweizhang_weichuli_layout"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:id="@+id/acitivty_mycar_association_current_car"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="当前车辆"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16"/>
+
+            <TextView
+                android:id="@+id/acitivty_mycar_association_current_car_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx5"
+                android:layout_gravity="bottom"
+                android:background="@color/textgreen"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/acitivty_myweizhang_yichuli_layout"
+            android:layout_width="@dimen/wpx1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/hpx10"
+            android:layout_marginTop="@dimen/hpx10"
+            android:background="@color/line_gray"/>
+
+        <FrameLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:id="@+id/acitivty_mycar_association_history_car"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="过往车辆"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16"/>
+
+            <TextView
+                android:id="@+id/acitivty_mycar_association_history_car_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx5"
+                android:layout_gravity="bottom"
+                android:background="@color/textgreen"
+                android:visibility="gone"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/acitivty_mycar_association_pullfresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+    />
+
+</LinearLayout>

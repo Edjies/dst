@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/common_white_background_color"
+>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <TextView
+            android:id="@+id/tv_pick_site"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:drawableLeft="@drawable/quche"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="深圳"
+            android:textSize="14dp"
+            android:textColor="@color/common_item_main_text_color"
+        />
+
+        <TextView
+            android:id="@+id/tv_change_site"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="点击更换取车城市"
+            android:textSize="14dp"
+            android:textColor="@color/common_item_sub_text_color"
+        />
+
+
+        <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_cars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/common_gray_background_color">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:id="@+id/tv_demand"
+            android:text="如需租赁多种车型，请点击 增加车型"
+            android:textSize="15dp"
+            android:textColor="@color/common_item_sub_text_color"
+            android:background="@color/common_gray_background_color"/>
+    </RelativeLayout>
+
+    <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color"/>
+
+    <TextView
+        android:id="@+id/tv_add_car"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:text="+增加车型"
+        android:textSize="14dp"
+        android:textColor="@color/common_color_green"
+    />
+
+    <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="预计取车时间"
+            android:textSize="14dp"
+            android:textColor="@color/common_item_main_text_color"
+        />
+
+        <TextView
+            android:id="@+id/tv_pick_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:drawableRight="@drawable/right"
+            android:drawablePadding="8dp"
+            android:hint="请选择"
+            android:text=""
+            android:textSize="14dp"
+            android:textColorHint="@color/common_item_sub_text_color"
+            android:textColor="@color/common_item_sub_text_color"
+        />
+
+        <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/common_gray_background_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:text=">价格更低，租期更灵活"
+            android:textSize="12dp"
+            android:textColor="@color/common_item_sub_text_color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:gravity="center_vertical"
+            android:text=">3个月以上，尽享长租优惠"
+            android:textSize="12dp"
+            android:textColor="@color/common_item_sub_text_color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:gravity="center_vertical"
+            android:text=">专业化团队服务，强大系统支撑，24小时服务"
+            android:textSize="12dp"
+            android:textColor="@color/common_item_sub_text_color"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

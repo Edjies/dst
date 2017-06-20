@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgroudgray"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@id/suggest_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+    >
+
+        <TextView
+            android:id="@id/suggest_back"
+            style="@style/back"/>
+
+        <TextView
+            android:id="@id/suggest_title"
+            style="@style/topTitle"
+            android:text="@string/add"/>
+    </FrameLayout>
+
+    <EditText
+        android:id="@id/suggest_mark"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx300"
+        android:layout_marginLeft="@dimen/wpx40"
+        android:layout_marginRight="@dimen/wpx40"
+        android:layout_marginTop="@dimen/hpx50"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/suggestinfor"
+        android:inputType="textMultiLine"
+        android:lineSpacingExtra="@dimen/hpx10"
+        android:paddingLeft="@dimen/wpx8"
+        android:paddingTop="@dimen/hpx8"
+        android:textColorHint="@color/gray"
+        android:textSize="@dimen/sp16">
+
+        <requestFocus/>
+    </EditText>
+
+    <Button
+        android:id="@id/suggest_okbutton"
+        android:layout_width="160dp"
+        android:layout_height="@dimen/hpx100"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/wpx60"
+        android:layout_marginRight="@dimen/wpx60"
+        android:layout_marginTop="@dimen/hpx50"
+        android:background="@drawable/shape_radius_selector"
+        android:gravity="center"
+        android:text="@string/ok"
+
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp18"/>
+
+</LinearLayout>

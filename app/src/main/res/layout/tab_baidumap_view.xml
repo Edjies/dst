@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgroudgray"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@id/tab_charge_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <TextView
+          style="@style/topTitle"
+            android:text="@string/chongdianzhuang"
+            />
+
+        <TextView
+            android:id="@id/tab_charge_statinlistmeau"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/wpx24"
+            android:background="@drawable/dianzhanditu_1_03"/>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx1"
+        android:background="@color/login_line_gray"/>
+
+    <FrameLayout
+        android:id="@id/tab_charge_maplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:id="@id/tab_charge_mapviewlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@id/tab_charge_baidumap"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                />
+        </LinearLayout>
+
+        <include
+            layout="@layout/view_map_iteminfor"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginLeft="@dimen/wpx40"
+            android:layout_marginRight="@dimen/wpx40"
+            android:layout_marginTop="@dimen/hpx30"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx100"
+                android:layout_gravity="top"
+                android:background="@drawable/search_frame"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <EditText
+                    android:id="@id/tab_charge_searchinput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/lines"
+                    android:ems="15"
+                    android:hint="@string/mapserchinput"
+                    android:paddingLeft="@dimen/wpx100"
+                    android:paddingRight="@dimen/wpx70"
+                    android:textSize="@dimen/sp16">
+                </EditText>
+
+                <TextView
+                    android:id="@id/tab_charge_settextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="@dimen/wpx20"
+                    android:background="@drawable/dianzhanditu_1_07"/>
+
+                <TextView
+                    android:id="@id/tab_charge_searchok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/wpx20"
+                    android:background="@drawable/dianzhanditu_1_09"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@id/tab_charge_searchlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@id/tab_charge_searchlistview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/wpx10"
+                    android:layout_marginRight="@dimen/wpx10"
+                    android:cacheColorHint="@color/transparent"
+                    android:divider="@drawable/line"
+                    android:fadingEdge="none"
+                    android:fastScrollEnabled="false"
+                    android:footerDividersEnabled="false"
+                    android:headerDividersEnabled="false"
+                    android:smoothScrollbar="true">
+                </ListView>
+
+                <TextView
+                    android:id="@id/tab_charge_searchclear"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx75"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/wpx10"
+                    android:layout_marginRight="@dimen/wpx10"
+                    android:background="@color/backgroudgray"
+                    android:gravity="center"
+                    android:text="@string/qingchujilu"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp14"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@id/tab_charge_statinlist_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/hpx20"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx100"
+            android:layout_gravity="top"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <LinearLayout
+                android:id="@id/tab_charge_statinlist_shaixuanlayout"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/wpx48"
+                    android:layout_height="@dimen/wpx48"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:focusable="false"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dianzhanditu_1_07"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/wpx10"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="@string/shaixuan"
+                    android:textColor="@drawable/map_list_shaixuantext"
+                    android:textSize="@dimen/sp16"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/wpx1"
+                android:layout_height="match_parent"
+                android:background="@color/line_gray"
+                android:paddingBottom="@dimen/hpx10"
+                android:paddingTop="@dimen/hpx10"/>
+
+            <FrameLayout
+                android:id="@id/tab_charge_statinlist_dizhilayout"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:paddingRight="@dimen/wpx24">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left|center_vertical"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/wpx30"
+                    android:text="@string/xuanzechengshi"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp14"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@id/tab_charge_statinlist_dizhi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/wpx10"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/sp16"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/wpx12"
+                        android:layout_height="@dimen/hpx20"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/wpx10"
+                        android:clickable="false"
+                        android:duplicateParentState="true"
+                        android:focusable="false"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/right"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/hpx5"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/wpx200"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@id/tab_charge_quyulistview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/user_gray2"
+                    android:divider="@color/gray"
+                    android:dividerHeight="@dimen/hpx1"
+                    android:fadeScrollbars="false"
+                    android:fadingEdge="none"
+                    android:fastScrollEnabled="false"
+                    android:footerDividersEnabled="false"
+                    android:headerDividersEnabled="false"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    android:smoothScrollbar="false">
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@id/tab_charge_quyu"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx60"
+                    android:background="@color/user_gray2"
+                    android:gravity="center"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/sp14"
+                    android:visibility="gone"/>
+
+                <com.handmark.pulltorefresh.library.PullToRefreshListView
+                    android:id="@id/tab_charge_statinlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/backgroudgray"
+                    android:cacheColorHint="@color/transparent"
+                    android:fadingEdge="none"
+                    android:fastScrollEnabled="false"
+                    android:footerDividersEnabled="false"
+                    android:headerDividersEnabled="false"
+                    android:smoothScrollbar="true"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

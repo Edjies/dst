@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudgray"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@id/addrlist_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@id/addrlist_back"
+            style="@style/back" />
+
+        <TextView
+            android:text="@string/mendianxuanze2"
+            style="@style/topTitle" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx2"
+        android:background="@color/line_gray" />
+
+    <LinearLayout
+        android:id="@id/addrlist_citylayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hpx20"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx60"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/wpx24"
+            android:text="@string/dingweichengshi"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:id="@id/addrlist_mycity"
+            android:layout_width="@dimen/wpx200"
+            android:layout_height="@dimen/hpx80"
+            android:layout_marginLeft="@dimen/wpx24"
+            android:layout_marginTop="@dimen/hpx20"
+            android:background="@drawable/addr_mycity"
+            android:gravity="center"
+            android:textColor="@color/gray4"
+            android:textSize="@dimen/sp16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/hpx20"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx60"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/wpx24"
+            android:text="@string/kaitongchengshi"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx1"
+            android:background="@color/gray" />
+
+        <ListView
+            android:id="@id/addrlist_list2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/gray"
+            android:dividerHeight="@dimen/hpx1"
+            android:fadeScrollbars="false"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:smoothScrollbar="false" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

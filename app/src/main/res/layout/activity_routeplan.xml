@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        style="@style/titlebackground"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx96"
+        android:layout_gravity="top" >
+
+        <TextView
+            style="@style/titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/map_routeplan" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@id/map_routeplanmap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@id/map_routeplan_daohang"
+            android:layout_width="@dimen/wpx100"
+            android:layout_height="@dimen/hpx100"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="@dimen/hpx50"
+            android:scaleType="fitXY"
+            android:src="@drawable/map_charge_go"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

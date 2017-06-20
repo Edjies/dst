@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgroudgray"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@id/walletlist_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/walletlist_back"
+            style="@style/back"/>
+
+        <TextView
+            style="@style/topTitle"
+            android:text="交易明细"/>
+
+        <ImageButton
+            android:id="@+id/activity_wallet_list_more"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/dianzhanditu_1_03"/>
+    </FrameLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hpx80"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/walletlist_all_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+            >
+
+                <TextView
+                    android:id="@+id/walletlist_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/all"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@+id/walletlist_all_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx5"
+                    android:layout_gravity="bottom"
+                    android:background="@color/textgreen"
+                    android:visibility="visible"/>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="@dimen/wpx1"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/hpx10"
+                android:layout_marginTop="@dimen/hpx10"
+                android:background="@color/line_gray"/>
+
+            <FrameLayout
+                android:id="@+id/walletlist_more_detail_layout"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/walletlist_more_detail_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx5"
+                    android:layout_gravity="bottom"
+                    android:background="@color/textgreen"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/walletlist_more_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="押金充值"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16"/>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="@dimen/wpx1"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/hpx10"
+                android:layout_marginTop="@dimen/hpx10"
+                android:background="@color/line_gray"/>
+
+            <FrameLayout
+                android:id="@+id/walletlist_congdian_order_layout"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+            >
+
+                <TextView
+                    android:id="@+id/walletlist_congdian_order_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx5"
+                    android:layout_gravity="bottom"
+                    android:background="@color/textgreen"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/walletlist_congdian_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="充电订单"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16"/>
+            </FrameLayout>
+
+
+            <TextView
+                android:layout_width="@dimen/wpx1"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/hpx10"
+                android:layout_marginTop="@dimen/hpx10"
+                android:background="@color/line_gray"/>
+
+
+            <FrameLayout
+                android:id="@+id/walletlist_dianka_congzhi_layout"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+            >
+
+                <TextView
+                    android:id="@+id/walletlist_dianka_congzhi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="电卡充值"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@+id/walletlist_dianka_congzhi_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx5"
+                    android:layout_gravity="bottom"
+                    android:background="@color/textgreen"
+                    android:visibility="gone"/>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="@dimen/wpx1"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/hpx10"
+                android:layout_marginTop="@dimen/hpx10"
+                android:background="@color/line_gray"/>
+
+            <FrameLayout
+                android:id="@+id/walletlist_rent_order_layout"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+            >
+
+                <TextView
+                    android:id="@+id/walletlist_rent_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="租车订单"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16"/>
+
+                <TextView
+                    android:id="@+id/walletlist_rent_order_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx5"
+                    android:layout_gravity="bottom"
+                    android:background="@color/textgreen"
+                    android:visibility="gone"/>
+            </FrameLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/activity_wallet_detail_flush"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+    />
+
+</LinearLayout>

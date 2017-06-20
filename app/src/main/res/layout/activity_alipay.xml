@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudgray"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@id/alipay_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/hpx50" >
+
+        <TextView
+            android:id="@id/alipay_backtextview"
+            style="@style/back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx96"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/zhifubao"
+            android:textColor="@color/textgreen"
+            android:textSize="@dimen/sp18" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx100"
+        android:layout_marginTop="@dimen/hpx20"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/wpx40"
+        android:paddingRight="@dimen/wpx35" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/wpx20"
+            android:gravity="center_vertical"
+            android:text="@string/alipaysubject"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@id/alipay_product_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx2"
+        android:layout_marginLeft="@dimen/wpx40"
+        android:layout_marginRight="@dimen/wpx35"
+        android:scaleType="fitXY"
+        android:src="@drawable/next_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx100"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/wpx40"
+        android:paddingRight="@dimen/wpx35" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/alipayintroduce"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@id/alipay_product_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx2"
+        android:layout_marginLeft="@dimen/wpx40"
+        android:layout_marginRight="@dimen/wpx35"
+        android:scaleType="fitXY"
+        android:src="@drawable/next_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx100"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/wpx40"
+        android:paddingRight="@dimen/wpx35" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/wpx20"
+            android:gravity="center_vertical"
+            android:text="@string/alipayprice"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@id/alipay_product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16" />
+    </LinearLayout>
+
+    <Button
+        android:id="@id/alipay_paybutton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx100"
+        android:layout_marginLeft="@dimen/wpx60"
+        android:layout_marginRight="@dimen/wpx60"
+        android:layout_marginTop="@dimen/hpx50"
+        android:background="@drawable/bt_green"
+        android:gravity="center"
+        android:text="@string/wallet_pay"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp18" />
+
+</LinearLayout>

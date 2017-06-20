@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgroudgray"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@id/citystore_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+    >
+
+        <TextView
+            android:id="@id/citystore_backtextview"
+            style="@style/back"
+        />
+
+        <TextView
+            style="@style/topTitle"
+            android:text="@string/mendianxuanze3"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@id/citystore_dizhi_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx80"
+        android:layout_marginTop="@dimen/hpx20"
+        android:background="@color/white"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingLeft="@dimen/wpx24"
+        android:paddingRight="@dimen/wpx24"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/wpx30"
+            android:text="@string/xuanzechengshi"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp16"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@id/citystore_dizhiview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:paddingLeft="@dimen/wpx10"
+                android:textColor="@color/gray4"
+                android:textSize="@dimen/sp18"/>
+
+            <ImageView
+                android:layout_width="@dimen/wpx12"
+                android:layout_height="@dimen/hpx20"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/wpx10"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/right"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <ListView
+        android:id="@id/citystore_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hpx20"
+        android:background="@color/white"
+        android:divider="@color/gray"
+        android:dividerHeight="@dimen/hpx1"
+        android:fadeScrollbars="false"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:smoothScrollbar="false">
+    </ListView>
+
+</LinearLayout>

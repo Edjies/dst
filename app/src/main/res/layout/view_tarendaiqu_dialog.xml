@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/wpx630"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx88"
+        android:gravity="center"
+        android:text="@string/weituotarendaiqu"
+        android:textColor="@color/textgreen"
+        android:textSize="@dimen/sp16" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx1"
+        android:background="@color/line_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx80"
+        android:layout_marginLeft="@dimen/wpx20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/dangqiandingdan"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:id="@id/view_tarendaiqu_dialog_danhao"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/wpx10"
+            android:gravity="center_vertical"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx80"
+        android:layout_marginLeft="@dimen/wpx20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/qucherenxingming"
+            android:textColor="@color/gray4"
+            android:textSize="@dimen/sp14" />
+
+        <EditText
+            android:id="@id/view_tarendaiqu_dialog_qucheren"
+            android:layout_width="@dimen/wpx400"
+            android:layout_height="@dimen/hpx60"
+            android:layout_marginLeft="@dimen/wpx10"
+            android:background="@drawable/image_edit_bg"
+            android:ems="10"
+            android:gravity="center"
+            android:textColor="@color/gray4"
+            android:textSize="@dimen/sp14" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx80"
+        android:layout_marginLeft="@dimen/wpx20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/qucherenshouji"
+            android:textColor="@color/gray4"
+            android:textSize="@dimen/sp14" />
+
+        <EditText
+            android:id="@id/view_tarendaiqu_dialog_phone"
+            android:layout_width="@dimen/wpx400"
+            android:layout_height="@dimen/hpx60"
+            android:layout_marginLeft="@dimen/wpx10"
+            android:background="@drawable/image_edit_bg"
+            android:ems="11"
+            android:gravity="center"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textColor="@color/gray4"
+            android:textSize="@dimen/sp14" >
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx1"
+        android:background="@color/line_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx90"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <TextView
+            android:id="@id/view_tarendaiqu_dialog_cancel"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="@string/cancle"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:layout_width="@dimen/wpx1"
+            android:layout_height="match_parent"
+            android:background="@color/line_gray" />
+
+        <TextView
+            android:id="@id/view_tarendaiqu_dialog_ok"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="@string/tijiaoqueren"
+            android:textColor="@color/yellow2"
+            android:textSize="@dimen/sp16" />
+    </LinearLayout>
+
+</LinearLayout>

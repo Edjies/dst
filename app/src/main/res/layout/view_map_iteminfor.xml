@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@id/tab_charge_chargestatin_inforlayout"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/hpx300"
+              android:layout_gravity="bottom"
+              android:layout_marginBottom="@dimen/hpx15"
+              android:layout_marginLeft="@dimen/wpx15"
+              android:layout_marginRight="@dimen/wpx24"
+              android:background="@drawable/dianzhanditu_3_03"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@id/tab_charge_chargestatin_infor_topinforlayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx200"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/hpx100"
+                android:layout_gravity="left|center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/wpx20">
+
+                <TextView
+                    android:id="@id/tab_charge_chargestatin_infor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left|center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/sp18"/>
+
+                <ImageView
+                    android:id="@id/tab_charge_chargestatin_infor_typeimage_byd"
+                    android:layout_width="@dimen/wpx36"
+                    android:layout_height="@dimen/hpx36"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/wpx10"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bycc"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@id/tab_charge_chargestatin_infor_typeimage_gj"
+                    android:layout_width="@dimen/wpx36"
+                    android:layout_height="@dimen/hpx36"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/wpx10"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/gdc"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@id/tab_charge_chargestatin_infor_typeimage_tsl"
+                    android:layout_width="@dimen/wpx36"
+                    android:layout_height="@dimen/hpx36"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/wpx10"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tslc"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@id/tab_charge_chargestatin_infor_typeimage_qt"
+                    android:layout_width="@dimen/wpx36"
+                    android:layout_height="@dimen/hpx36"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/wpx10"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bxc"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/hpx100"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/wpx20">
+
+                <ImageView
+                    android:layout_width="@dimen/wpx36"
+                    android:layout_height="@dimen/hpx36"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dianzhanditu_3_14"/>
+
+                <TextView
+                    android:id="@id/tab_charge_chargestatin_infor_install_site"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/view_map_item_info_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@id/tab_charge_chargestatin_infor_routplan"
+                android:layout_width="@dimen/wpx150"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/wpx20"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/dianzhanditu_3_10"
+                android:gravity="center"
+                android:text="@string/genwozou"
+                android:textColor="@color/textgreen"
+                android:textSize="@dimen/sp16"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx100"
+        android:paddingLeft="@dimen/wpx20"
+        android:paddingRight="@dimen/wpx20">
+
+        <ImageView
+            android:layout_width="@dimen/wpx165"
+            android:layout_height="@dimen/hpx40"
+            android:layout_gravity="left|center_vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/dianzhanditu_3_19"/>
+
+        <TextView
+            android:id="@id/tab_charge_chargestatin_infor_chargestatus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp16"/>
+    </FrameLayout>
+</LinearLayout>

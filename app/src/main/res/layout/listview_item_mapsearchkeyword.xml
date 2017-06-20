@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/hpx75"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/wpx20"
+    android:paddingRight="@dimen/wpx20" >
+
+    <TextView
+        android:id="@id/listview_item_mapsearchkeyword_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp16" />
+
+    <ImageView
+        android:id="@id/listview_item_mapsearchkeyword_image"
+        android:layout_width="@dimen/wpx32"
+        android:layout_height="@dimen/hpx32"
+        android:layout_gravity="right|center_vertical"
+        android:scaleType="fitXY" />
+
+</FrameLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bu_ji_mian_pei_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haofeng.apps.dst.ui.BaoXianDetailActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/yajin_detail_top_layout">
+        <TextView
+            android:id="@+id/yajin_detail_back"
+            style="@style/back"/>
+        <TextView
+            android:text="押金声明"
+            style="@style/topTitle"/>
+    </FrameLayout>
+    <WebView
+        android:id="@+id/yajin_detail_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+    </WebView>
+</LinearLayout>

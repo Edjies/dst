@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudgray"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@id/mycar_listitem_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hpx20"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/wpx30"
+            android:paddingRight="@dimen/wpx30" >
+
+            <ImageView
+                android:layout_width="@dimen/wpx233"
+                android:layout_height="@dimen/hpx80"
+                android:layout_gravity="right|bottom"
+                android:scaleType="fitXY"
+                android:src="@drawable/my_car" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx80"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/vehicle"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:id="@id/mycar_listitem_infor_vehicle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/wpx10"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/mycar_listitem_infor_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx80"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/vhc_con_model"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:id="@id/mycar_listitem_infor_vhc_model"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/wpx10"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx80"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/vhc_con_type"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:id="@id/mycar_listitem_infor_vhc_con_type_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/wpx10"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp16" />
+
+                    <ImageView
+                        android:id="@id/mycar_listitem_infor_image"
+                        android:layout_width="@dimen/wpx36"
+                        android:layout_height="@dimen/hpx36"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/wpx10"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx2"
+            android:scaleType="fitXY"
+            android:src="@drawable/car_line" />
+
+        <LinearLayout
+            android:id="@id/mycar_listitem_bottomlayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx80"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
+
+            <LinearLayout
+                android:id="@id/mycar_listitem_delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/map_charge_backgroud"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/wpx30"
+                    android:layout_height="@dimen/wpx30"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mycar_shanchu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/wpx15"
+                    android:text="@string/delete"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/line_shu" />
+
+            <LinearLayout
+                android:id="@id/mycar_listitem_update"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/map_charge_backgroud"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/wpx30"
+                    android:layout_height="@dimen/wpx30"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mycar_xiugai" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/wpx15"
+                    android:text="@string/change"
+                    android:textColor="@color/menugreen"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

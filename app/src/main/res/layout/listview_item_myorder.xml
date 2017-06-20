@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudgray"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@id/myorder_listitem_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx100" >
+
+        <TextView
+            android:id="@id/myorder_listitem_infor_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:gravity="bottom"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@id/myorder_listitem_infor_systime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="bottom"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp16" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/wpx30"
+        android:paddingRight="@dimen/wpx30" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx100"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:gravity="center_vertical"
+                    android:text="@string/orderdate"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@id/myorder_listitem_infor_appointed_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/wpx10"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/myorder_listitem_infor_stanus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="center_vertical"
+                android:textColor="@color/green"
+                android:textSize="@dimen/sp16" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hpx100"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:text="@string/ordertime"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@id/myorder_listitem_infor_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/wpx10"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hpx100"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:text="@string/dianzhuangbianhao"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@id/myorder_listitem_infor_code_from_compony"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/wpx10"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hpx100"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:text="@string/dizhi"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@id/myorder_listitem_infor_install_site"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/wpx10"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="@dimen/hpx10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/line" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx100" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/hpx100"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:gravity="center_vertical"
+                    android:text="@string/dianzhuangleixing"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@id/myorder_listitem_infor_connection_type_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/wpx10"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+
+                <ImageView
+                    android:id="@id/myorder_listitem_infor_image"
+                    android:layout_width="@dimen/wpx36"
+                    android:layout_height="@dimen/hpx36"
+                    android:layout_marginLeft="@dimen/wpx10"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@id/myorder_listitem_delete"
+                    android:layout_width="@dimen/wpx30"
+                    android:layout_height="@dimen/hpx30"
+                    android:layout_gravity="left|center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mycar_shanchu" />
+
+                <ImageView
+                    android:id="@id/myorder_listitem_update"
+                    android:layout_width="@dimen/wpx30"
+                    android:layout_height="@dimen/hpx30"
+                    android:layout_gravity="right|center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mycar_xiugai" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/activity_often_problem_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+    >
+
+        <ImageButton
+            android:id="@+id/activity_often_problem_back"
+            style="@style/back"/>
+
+        <TextView
+            android:text="常见问题"
+            style="@style/topTitle"/>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/gray2"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="问题类型"
+        android:textSize="16sp"/>
+    <RelativeLayout android:id="@+id/activity_often_problem_guide_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp" android:paddingTop="5dp">
+        <ImageView android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:layout_marginLeft="10dp"
+                   android:background="@drawable/images"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:text="新手指南"
+            android:textSize="14sp"/>
+        <ImageView android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="10dp"
+                   android:background="@drawable/right_black"/>
+    </RelativeLayout>
+    <TextView style="@style/main_sliding_menu_list_line"/>
+    <RelativeLayout android:id="@+id/activity_often_problem_rent_car_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+        <ImageView android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:layout_marginLeft="10dp"
+
+                   android:background="@drawable/images"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:text="租车问题"
+            android:textSize="14sp"/>
+        <ImageView android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="10dp"
+                   android:background="@drawable/right_black"/>
+    </RelativeLayout>
+    <TextView style="@style/main_sliding_menu_list_line"/>
+    <RelativeLayout android:id="@+id/activity_often_problem_add_power_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+        <ImageView android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:layout_marginLeft="10dp"
+                   android:background="@drawable/images"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:text="充电问题"
+            android:textSize="14sp"/>
+        <ImageView android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="10dp"
+                   android:background="@drawable/right_black"/>
+    </RelativeLayout>
+    <TextView style="@style/main_sliding_menu_list_line"/>
+    <RelativeLayout android:id="@+id/activity_often_problem_car_service_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+        <ImageView android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:layout_marginLeft="10dp"
+
+                   android:background="@drawable/images"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:text="车辆服务问题"
+            android:textSize="14sp"/>
+        <ImageView android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="10dp"
+                   android:background="@drawable/right_black"/>
+    </RelativeLayout>
+    <TextView style="@style/main_sliding_menu_list_line"/>
+    <RelativeLayout android:id="@+id/activity_often_problem_location_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+        <ImageView android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:layout_marginLeft="10dp"
+
+                   android:background="@drawable/images"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:text="线下网点问题"
+            android:textSize="14sp"/>
+        <ImageView android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="10dp"
+                   android:background="@drawable/right_black"/>
+    </RelativeLayout>
+    <TextView style="@style/main_sliding_menu_list_line"/>
+
+
+</LinearLayout>
+

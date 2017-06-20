@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgroudgray"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@id/carrestlist_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+    >
+
+        <TextView
+            android:id="@id/carrestlist_back"
+            style="@style/back"
+        />
+
+        <TextView
+            style="@style/topTitle"
+            android:text="@string/wodedingdan"/>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx2"
+        android:background="@color/line_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx80"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <FrameLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2">
+
+            <TextView
+                android:id="@id/carrestlist_all"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/all"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16"/>
+
+            <TextView
+                android:id="@id/carrestlist_all_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx5"
+                android:layout_gravity="bottom"
+                android:background="@color/textgreen"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="@dimen/wpx1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/hpx10"
+            android:layout_marginTop="@dimen/hpx10"
+            android:background="@color/line_gray"/>
+
+        <FrameLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2">
+
+            <TextView
+                android:id="@id/carrestlist_daifukuan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/daifukuan"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16"/>
+
+            <TextView
+                android:id="@id/carrestlist_daifukuan_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx5"
+                android:layout_gravity="bottom"
+                android:background="@color/textgreen"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="@dimen/wpx1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/hpx10"
+            android:layout_marginTop="@dimen/hpx10"
+            android:background="@color/line_gray"/>
+
+        <FrameLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2">
+
+            <TextView
+                android:id="@id/carrestlist_daitiche_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx5"
+                android:layout_gravity="bottom"
+                android:background="@color/textgreen"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@id/carrestlist_daitiche"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/daitiche"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="@dimen/wpx1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/hpx10"
+            android:layout_marginTop="@dimen/hpx10"
+            android:background="@color/line_gray"/>
+
+        <FrameLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2">
+
+            <TextView
+                android:id="@id/carrestlist_yitiche"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/yitiche"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16"/>
+
+            <TextView
+                android:id="@id/carrestlist_yitiche_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx5"
+                android:layout_gravity="bottom"
+                android:background="@color/textgreen"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="@dimen/wpx1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/hpx10"
+            android:layout_marginTop="@dimen/hpx10"
+            android:background="@color/line_gray"/>
+
+        <FrameLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2">
+
+            <TextView
+                android:id="@id/carrestlist_yiquxiao"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/yiquxiao"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16"/>
+
+            <TextView
+                android:id="@id/carrestlist_yiquxiao_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx5"
+                android:layout_gravity="bottom"
+                android:background="@color/textgreen"
+                android:visibility="gone"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx1"
+        android:background="@color/line_gray"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@id/carrestlist_vpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/transparent"
+        android:flipInterval="30"
+        android:overScrollMode="never"
+        android:persistentDrawingCache="animation"/>
+
+</LinearLayout>

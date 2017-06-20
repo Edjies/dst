@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/wpx600"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/xinzeng_frame"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/wpx2" >
+
+    <ListView
+        android:id="@id/view_radiolist_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@drawable/line"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

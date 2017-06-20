@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/hpx100"
+    android:layout_gravity="center"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@id/listview_item_view_radiobtn_dialog_noheadimage_typetext"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="@dimen/wpx40"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp16" />
+
+    <ImageView
+        android:id="@id/listview_item_view_radiobtn_dialog_noheadimage_typeradio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="@dimen/wpx35"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_radio_off_holo_dark" />
+
+</FrameLayout>

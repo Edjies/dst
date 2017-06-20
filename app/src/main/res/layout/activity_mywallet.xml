@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@id/wallet_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+    >
+
+        <TextView
+            android:id="@id/wallet_back"
+            style="@style/back"/>
+
+        <TextView
+            style="@style/topTitle"
+            android:text="@string/wallet"
+        />
+
+        <TextView
+            android:id="@+id/activity_mywallet_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:text="明细"
+            android:visibility="invisible"
+            android:textColor="#88000000"/>
+    </FrameLayout>
+    <!-- 电卡余额 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_color_green"
+        android:orientation="vertical"
+        android:translationZ="10dp"
+    >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="电卡余额(元)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/activity_mywallet_power_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="7dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="7dp"
+            android:textColor="#ffffff"
+            android:textSize="36sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1.5dip"
+            android:background="#36ffffff"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/activity_mywallet_power_congzhi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:text="充值"
+                android:textColor="#ffffff"
+            />
+            <TextView
+                android:layout_width="1.5dip"
+                android:layout_height="match_parent"
+                android:background="#36ffffff"/>
+            <Button
+                android:id="@+id/activity_mywallet_power_tixian"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="提现"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 租车押金 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/common_color_green"
+        android:orientation="vertical"
+        android:translationZ="10dp"
+    >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="租车押金(元)"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/activity_mywallet_yajin_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="7dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="7dp"
+            android:textColor="#ffffff"
+            android:textSize="36sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#36ffffff"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray"/>
+
+            <Button
+                android:id="@+id/activity_mywallet_yajin_congzhi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="充值"
+                android:textColor="#ffffff"/>
+            <TextView
+                android:layout_width="1.5dip"
+                android:layout_height="match_parent"
+                android:background="#36ffffff"/>
+
+            <Button
+                android:id="@+id/activity_mywallet_yajin_tixian"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="提现"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

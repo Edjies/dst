@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudgray"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@id/chargelist_listitem_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx330"
+        android:layout_marginLeft="@dimen/wpx20"
+        android:layout_marginRight="@dimen/wpx20"
+        android:layout_marginTop="@dimen/hpx20"
+        android:background="@drawable/dianzhanditu_3_03"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx80"
+            android:paddingLeft="@dimen/wpx24"
+            android:paddingRight="@dimen/wpx24" >
+
+            <TextView
+                android:id="@id/chargelist_listitem_infor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/textgreen"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@id/chargelist_listitem_infor_status"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/textdeepgreen"
+                android:textSize="@dimen/sp16" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx1"
+            android:background="@color/textgreen" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/wpx24"
+            android:paddingRight="@dimen/wpx24" >
+
+            <ImageView
+                android:layout_width="@dimen/wpx36"
+                android:layout_height="@dimen/wpx36"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/xiangqing_addr" />
+
+            <TextView
+                android:id="@id/chargelist_listitem_infor_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/wpx10"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/hpx80"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx80"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/wpx24"
+            android:paddingRight="@dimen/wpx24" >
+
+            <ImageView
+                android:layout_width="@dimen/wpx36"
+                android:layout_height="@dimen/wpx36"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/xiangqing_open_time" />
+
+            <TextView
+                android:id="@id/chargelist_listitem_infor_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/wpx10"
+                android:gravity="center_vertical"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx80"
+            android:paddingLeft="@dimen/wpx24"
+            android:paddingRight="@dimen/wpx24" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/wpx36"
+                    android:layout_height="@dimen/wpx36"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/xiangqing_jieshu_time" />
+
+                <TextView
+                    android:id="@id/chargelist_listitem_infor_time2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/wpx10"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/chargelist_listitem_infor_money"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/gray4"
+                android:textSize="@dimen/sp16" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

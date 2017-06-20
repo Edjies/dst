@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudgray"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@id/suggestlist_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/hpx50" >
+
+        <TextView
+            android:id="@id/suggestlist_back"
+            style="@style/back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx96"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/suggest"
+            android:textColor="@color/textgreen"
+            android:textSize="@dimen/sp18" />
+
+        <TextView
+            android:id="@id/suggestlist_add"
+            style="@style/titlesmalltext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:text="@string/add"
+            android:textColor="@color/textgreen"
+            android:textSize="@dimen/sp16" />
+    </FrameLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@id/suggestlist_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@drawable/line"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" />
+
+</LinearLayout>

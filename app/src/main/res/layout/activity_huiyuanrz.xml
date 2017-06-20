@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudgray"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@id/huiyuanrz_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@id/huiyuanrz_back"
+            style="@style/back" />
+
+        <TextView
+            android:text="@string/huiyuanrenzheng"
+            style="@style/topTitle"/>
+
+        <TextView
+            android:id="@id/huiyuanrz_zanburenzheng"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hpx96"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/wpx20"
+            android:gravity="center_vertical"
+            android:text="@string/zanburenzheng"
+            android:textColor="@color/textgreen"
+            android:textSize="@dimen/sp16"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@id/huiyuanrz_toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hpx20"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx80"
+            android:gravity="center"
+            android:text="@string/huiyuanrenzhenginfor"
+            android:textColor="@color/textgreen"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx80"
+            android:gravity="center"
+            android:text="@string/huiyuanrenzhenginfor2"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/hpx20"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/wpx30"
+        android:paddingRight="@dimen/wpx30" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/hpx100"
+                android:gravity="center_vertical"
+                android:text="@string/huiyuanleixing"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16" />
+
+            <LinearLayout
+                android:id="@id/huiyuanrz_gerenlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/wpx30"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@id/huiyuanrz_gerenimage"
+                    android:layout_width="@dimen/wpx36"
+                    android:layout_height="@dimen/wpx36" />
+
+                <TextView
+                    android:id="@id/huiyuanrz_geren"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/wpx10"
+                    android:gravity="center_vertical"
+                    android:text="@string/geren"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/huiyuanrz_qiyelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/wpx150"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@id/huiyuanrz_qiyeimage"
+                    android:layout_width="@dimen/wpx36"
+                    android:layout_height="@dimen/wpx36" />
+
+                <TextView
+                    android:id="@id/huiyuanrz_qiye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/wpx10"
+                    android:gravity="center_vertical"
+                    android:text="@string/qiye"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/huiyuanrz_geren_contentlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx100"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/wpx48"
+                    android:layout_height="@dimen/wpx48"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/image0_07" />
+
+                <EditText
+                    android:id="@id/huiyuanrz_geren_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/wpx10"
+                    android:background="@color/transparent"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="@string/zhenshixingming2"
+                    android:textColor="@color/textgreen"
+                    android:textColorHighlight="@color/textgreen"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/sp16" >
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx1"
+                android:background="@color/line_gray" />
+
+            <FrameLayout
+                android:id="@id/huiyuanrz_geren_shenfenlayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx100" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:gravity="center_vertical"
+                    android:text="@string/shenfenzheng"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/sp16" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@id/huiyuanrz_geren_shenfen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/sp14" />
+
+                    <ImageView
+                        android:id="@id/huiyuanrz_geren_shenfen_image"
+                        android:layout_width="@dimen/wpx12"
+                        android:layout_height="@dimen/hpx24"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/right" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx1"
+                android:background="@color/line_gray" />
+
+            <FrameLayout
+                android:id="@id/huiyuanrz_geren_jiazhaolayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx100" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:gravity="center_vertical"
+                    android:text="@string/jiashizheng"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/sp16" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@id/huiyuanrz_geren_jiazhao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/sp14" />
+
+                    <ImageView
+                        android:id="@id/huiyuanrz_geren_jiazhao_image"
+                        android:layout_width="@dimen/wpx12"
+                        android:layout_height="@dimen/hpx24"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/right" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx1"
+                android:background="@color/line_gray" />
+
+            <TextView
+                android:id="@id/huiyuanrz_geren_ok"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx100"
+                android:layout_marginLeft="@dimen/wpx60"
+                android:layout_marginRight="@dimen/wpx60"
+                android:layout_marginTop="@dimen/hpx40"
+                android:background="@drawable/chongdianyemian5_1_03"
+                android:gravity="center"
+                android:text="@string/tijiaorenzheng"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/huiyuanrz_qiye_contentlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx100"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/wpx48"
+                    android:layout_height="@dimen/wpx48"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/image0_03" />
+
+                <EditText
+                    android:id="@id/huiyuanrz_qiye_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/wpx10"
+                    android:background="@color/transparent"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="@string/qiyexinming"
+                    android:textColor="@color/textgreen"
+                    android:textColorHighlight="@color/textgreen"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/sp16" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx100"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/wpx48"
+                    android:layout_height="@dimen/wpx48"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/image0_07" />
+
+                <EditText
+                    android:id="@id/huiyuanrz_qiye_farenname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/wpx10"
+                    android:background="@color/transparent"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="@string/farenxinming"
+                    android:textColor="@color/textgreen"
+                    android:textColorHighlight="@color/textgreen"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/sp16" >
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx1"
+                android:background="@color/line_gray" />
+
+            <FrameLayout
+                android:id="@id/huiyuanrz_qiye_shenfenlayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx100" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:gravity="center_vertical"
+                    android:text="@string/farenshenfenzhengshangchuan"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/sp16" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@id/huiyuanrz_qiye_shenfen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/sp14" />
+
+                    <ImageView
+                        android:id="@id/huiyuanrz_qiye_shenfen_image"
+                        android:layout_width="@dimen/wpx12"
+                        android:layout_height="@dimen/hpx24"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/right" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx1"
+                android:background="@color/line_gray" />
+
+            <FrameLayout
+                android:id="@id/huiyuanrz_qiye_yingyelayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx100" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:gravity="center_vertical"
+                    android:text="@string/yingyezhizhaoshangchuan"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/sp16" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@id/huiyuanrz_qiye_yingye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/sp14" />
+
+                    <ImageView
+                        android:id="@id/huiyuanrz_qiye_yingye_image"
+                        android:layout_width="@dimen/wpx12"
+                        android:layout_height="@dimen/hpx24"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/right" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx1"
+                android:background="@color/line_gray" />
+
+            <CheckBox
+                android:id="@id/huiyuanrz_qiye_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/hpx30"
+                android:button="@drawable/btn_checkbox"
+                android:checked="true"
+                android:paddingLeft="@dimen/wpx30"
+                android:text="@string/checkinfor"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@id/huiyuanrz_qiye_ok"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx100"
+                android:layout_marginLeft="@dimen/wpx60"
+                android:layout_marginRight="@dimen/wpx60"
+                android:layout_marginTop="@dimen/hpx40"
+                android:background="@drawable/bt_green"
+                android:gravity="center"
+                android:text="@string/tijiaorenzheng"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp18" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

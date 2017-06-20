@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_gray_background_color"
+>
+    <TextView
+        android:id="@+id/tv_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_status_bar_height"
+        android:background="@color/common_status_bar_background"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_height"
+        android:layout_below="@id/tv_status_bar"
+        android:background="@color/common_title_bar_background">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/common_title_padding_left"
+            android:paddingRight="@dimen/common_title_padding_right"
+            android:src="@drawable/fanhuig"
+            android:scaleType="center"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="常见问题"
+            android:textColor="@color/common_title_text_color"
+            android:textSize="@dimen/common_title_text_size"/>
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/common_title_padding_left"
+            android:paddingRight="@dimen/common_title_padding_right"
+            android:visibility="gone"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/xuanchengshi"
+            android:gravity="center"
+            android:text="深圳"
+            android:textSize="@dimen/common_title_text_size_2"
+            android:textColor="@color/common_title_text_color"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_divide_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/common_divide_color"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_title_bar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_xin_shou_zhi_nan"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="onClick"
+                android:background="@color/common_white_background_color">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="新手指南"
+                    android:textSize="14dp"
+                    android:textColor="@color/common_item_main_text_color"
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/right"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:text=""
+                    android:textSize="14dp"
+                    android:textColor="@color/common_item_sub_text_color"
+                />
+
+                <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_zu_che_wen_ti"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="onClick"
+                android:background="@color/common_white_background_color">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="租车问题"
+                    android:textSize="14dp"
+                    android:textColor="@color/common_item_main_text_color"
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/right"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:text=""
+                    android:textSize="14dp"
+                    android:textColor="@color/common_item_sub_text_color"
+                />
+
+                <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_chong_dian_wen_ti"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="onClick"
+                android:background="@color/common_white_background_color">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="充电问题"
+                    android:textSize="14dp"
+                    android:textColor="@color/common_item_main_text_color"
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/right"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:text=""
+                    android:textSize="14dp"
+                    android:textColor="@color/common_item_sub_text_color"
+                />
+
+                <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_fu_wu_wen_ti"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="onClick"
+                android:background="@color/common_white_background_color">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="车辆服务问题"
+                    android:textSize="14dp"
+                    android:textColor="@color/common_item_main_text_color"
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/right"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:text=""
+                    android:textSize="14dp"
+                    android:textColor="@color/common_item_sub_text_color"
+                />
+
+                <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_wang_dian_wen_ti"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="onClick"
+                android:background="@color/common_white_background_color">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="线下网店问题"
+                    android:textSize="14dp"
+                    android:textColor="@color/common_item_main_text_color"
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/right"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:text=""
+                    android:textSize="14dp"
+                    android:textColor="@color/common_item_sub_text_color"
+                />
+
+                <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

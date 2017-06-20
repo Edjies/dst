@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudgray"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        style="@style/titlebackground"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx96"
+        android:layout_gravity="top" >
+
+        <TextView
+            android:id="@id/leasecustom_back"
+            style="@style/titlesmalltext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/wpx30"
+            android:background="@drawable/return_arrow" />
+
+        <TextView
+            style="@style/titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/leasrcustom" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@id/leasecustom_contentlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="@dimen/wpx420"
+            android:layout_height="@dimen/hpx80"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/hpx50"
+            android:background="@drawable/lent_frame"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/wpx30"
+            android:paddingRight="@dimen/wpx30" >
+
+            <ImageView
+                android:layout_width="@dimen/wpx99"
+                android:layout_height="@dimen/hpx30"
+                android:scaleType="fitXY"
+                 />
+
+            <ImageView
+                android:layout_width="@dimen/wpx45"
+                android:layout_height="@dimen/hpx45"
+                android:layout_marginLeft="@dimen/wpx30"
+                android:layout_marginRight="@dimen/wpx30"
+                android:scaleType="fitXY"
+                android:src="@drawable/lent_hezuo" />
+
+            <ImageView
+                android:layout_width="@dimen/wpx66"
+                android:layout_height="@dimen/hpx54"
+                android:scaleType="fitXY"
+                android:src="@drawable/lent_company" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/wpx40"
+            android:layout_marginRight="@dimen/wpx40"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/wpx30"
+            android:paddingRight="@dimen/wpx30"
+            android:paddingTop="@dimen/hpx40" >
+
+            <TextView
+                android:id="@id/leasecustom_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp18" />
+
+            <TextView
+                android:id="@id/leasecustom_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx100"
+                android:layout_marginBottom="@dimen/hpx20"
+                android:layout_marginTop="@dimen/hpx20"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/wpx35"
+                    android:layout_height="@dimen/hpx40"
+                    android:layout_gravity="left|center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/xiangqing_addr" />
+
+                <TextView
+                    android:id="@id/leasecustom_instal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/wpx10"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/line" />
+
+            <TextView
+                android:id="@id/leasecustom_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/hpx10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/leasecustom_carlist"
+            android:layout_width="@dimen/wpx182"
+            android:layout_height="@dimen/wpx182"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/hpx50"
+            android:background="@drawable/lease_car_list"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="@dimen/hpx30"
+            android:text="@string/leasrcar"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+    </LinearLayout>
+
+</LinearLayout>

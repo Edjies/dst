@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudgray" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_marginBottom="@dimen/hpx112"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@id/carrestlistdetail2_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="@dimen/hpx50" >
+
+            <TextView
+                android:id="@id/carrestlistdetail2_back"
+                style="@style/back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx96"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/dingdanxiangqiang"
+                android:textColor="@color/textgreen"
+                android:textSize="@dimen/sp18" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/hpx20"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx70"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/wpx24"
+                android:paddingRight="@dimen/wpx24" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/dingdanhao"
+                    android:textColor="@color/textgreen"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@id/carrestlistdetail3_dingdanhao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/wpx10"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textgreen"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx60"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/wpx24"
+                android:paddingRight="@dimen/wpx24" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:gravity="center_vertical"
+                    android:text="@string/dingdanzongjine"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@id/carrestlistdetail3_dingdanjine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx60"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/wpx24"
+                android:paddingRight="@dimen/wpx24" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:gravity="center_vertical"
+                    android:text="@string/yifujine"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@id/carrestlistdetail3_yifujine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx60"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/wpx24"
+                android:paddingRight="@dimen/wpx24" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:gravity="center_vertical"
+                    android:text="@string/zuceyajin"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@id/carrestlistdetail3_zucheyajin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16" />
+            </FrameLayout>
+
+            <ListView
+                android:id="@id/carrestlistdetail3_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/hpx20"
+                android:fadeScrollbars="false"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:smoothScrollbar="false" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx100"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/wpx20" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/textgreen"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@id/carrestlistdetail3_ok_money"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/wpx10"
+                android:gravity="center_vertical"
+                android:textColor="@color/textgreen"
+                android:textSize="@dimen/sp18" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/carrestlistdetail3_ok"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:background="@color/gray"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/feiyongqueren"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18" />
+    </LinearLayout>
+
+</FrameLayout>

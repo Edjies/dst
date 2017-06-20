@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_sheng_qing_get_car"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_gray_background_color"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_status_bar_height"
+        android:background="@color/common_status_bar_background"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_height"
+        android:layout_below="@id/tv_status_bar"
+        android:background="@color/common_title_bar_background">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/common_title_padding_left"
+            android:paddingRight="@dimen/common_title_padding_right"
+            android:src="@drawable/fanhuig"
+            android:scaleType="center"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="申请提车"
+            android:textColor="@color/common_title_text_color"
+            android:textSize="@dimen/common_title_text_size"/>
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/common_title_padding_left"
+            android:paddingRight="@dimen/common_title_padding_right"
+            android:visibility="gone"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/xuanchengshi"
+            android:gravity="center"
+            android:text="深圳"
+            android:textSize="@dimen/common_title_text_size_2"
+            android:textColor="@color/common_title_text_color"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_divide_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/common_divide_color"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_title_bar"
+        android:layout_above="@+id/ll_bottom_tab"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- 车辆信息-->
+            <include layout="@layout/view_car_info"/>
+
+            <!-- 费用明细-->
+            <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color"/>
+            <TextView android:layout_width="match_parent" android:layout_height="32dp" android:gravity="center_vertical" android:layout_marginLeft="18dp"
+                      android:text="费用明细"
+                      android:textSize="15dp"
+                      android:textColor="@color/common_item_sub_text_color"/>
+            <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color"/>
+            <LinearLayout
+                android:id="@+id/ll_amount_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/common_white_background_color">
+
+            </LinearLayout>
+
+            <!-- 选择服务-->
+            <TextView android:layout_width="match_parent" android:layout_height="32dp" android:gravity="center_vertical" android:layout_marginLeft="18dp"
+                      android:text="选择服务"
+                      android:textSize="15dp"
+                      android:textColor="@color/common_item_sub_text_color"/>
+            <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color"/>
+            <include layout="@layout/view_select_service"/>
+
+
+            <!-- 支付方式-->
+            <TextView android:layout_width="match_parent" android:layout_height="32dp" android:gravity="center_vertical" android:layout_marginLeft="18dp"
+                      android:text="支付方式"
+                      android:textSize="15dp"
+                      android:textColor="@color/common_item_sub_text_color"/>
+            <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color"/>
+            <include layout="@layout/view_select_pay_type"/>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/common_white_background_color">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18dp"
+                android:paddingBottom="15dp"
+                android:gravity="bottom"
+                android:text="充值押金"
+                android:textColor="@color/common_item_main_text_color"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:id="@+id/tv_required_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="22dp"
+                android:paddingBottom="12dp"
+                android:gravity="bottom"
+                android:text="#800"
+                android:textColor="@color/common_color_green"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_gravity="bottom"
+                android:paddingBottom="15dp"
+                android:src="@drawable/chankanxiangqing"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@color/common_color_green"
+            android:gravity="center"
+            android:text="立即支付"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

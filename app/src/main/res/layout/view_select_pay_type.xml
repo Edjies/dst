@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="100dp"
+              android:background="@color/common_white_background_color">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:drawableLeft="@drawable/zhifubao"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:text="支付宝"
+            android:textSize="14dp"
+            android:textColor="@color/common_item_main_text_color"
+        />
+
+        <CheckBox
+            android:id="@+id/cb_zhifubao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/common_bt_checkbox"
+            android:button="@null"
+            android:background="@null"
+            android:textSize="14dp"
+            android:textColor="@color/common_item_sub_text_color"
+        />
+
+        <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:drawableLeft="@drawable/weixin"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:text="微信"
+            android:textSize="14dp"
+            android:textColor="@color/common_item_main_text_color"
+        />
+
+        <CheckBox
+            android:id="@+id/cb_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:drawableRight="@drawable/common_bt_checkbox"
+            android:drawablePadding="10dp"
+            android:button="@null"
+            android:background="@null"
+            android:textSize="14dp"
+            android:textColor="@color/common_item_sub_text_color"
+        />
+
+        <TextView android:layout_width="match_parent" android:layout_height="@dimen/common_divide_height" android:background="@color/common_divide_color" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

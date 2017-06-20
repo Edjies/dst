@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgroudgray"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@id/nichengbj_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+       >
+
+        <TextView
+            android:id="@id/nichengbj_back"
+            style="@style/back"/>
+
+        <TextView
+            android:id="@id/nichengbj_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/textgreen"
+            android:textSize="@dimen/sp18"/>
+
+        <TextView
+            android:id="@id/nichengbj_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hpx96"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/wpx24"
+            android:gravity="center"
+            android:text="@string/baocun"
+            android:textColor="@color/textgreen"
+            android:textSize="@dimen/sp16"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx100"
+        android:layout_marginTop="@dimen/hpx20"
+        android:background="@color/white">
+        <EditText
+            android:id="@id/nichengbj_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:ems="10"
+            android:hint="@string/qingshuru"
+            android:paddingLeft="@dimen/wpx24"
+            android:textColor="@color/gray4"
+            android:textSize="@dimen/sp16">
+
+            <requestFocus/>
+        </EditText>
+
+        <ImageView
+            android:id="@id/nichengbj_clean"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/wpx24"
+            android:src="@drawable/close"/>
+    </FrameLayout>
+
+</LinearLayout>

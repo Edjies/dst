@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgroudgray"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/tab_home_toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/tab_home_uselayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+        >
+            <ImageView
+                android:id="@+id/tab_home_btn_user"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/touxiang"
+                android:padding="40dp"/>
+
+            <TextView
+                android:id="@+id/tab_home_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/tab_home_btn_user"
+                android:text="会员"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/image_home_title"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx1"
+        android:background="@color/login_line_gray"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx420"
+        android:background="@color/white">
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/tab_home_top_images_vPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:persistentDrawingCache="animation"/>
+
+        <LinearLayout
+            android:id="@id/tab_home_top_point_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hpx80"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="@dimen/wpx24"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tab_home_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/hpx66"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:textColor="@color/gray"
+                android:textSize="14sp"/>
+            <TextView
+                android:id="@id/tab_home_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:textColor="@color/textgreen"
+                android:textSize="@dimen/sp14"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/tab_home_chargeing"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/wpx60"
+                android:layout_height="@dimen/wpx60"
+                android:layout_marginLeft="@dimen/wpx20"
+                android:scaleType="fitXY"
+                android:src="@drawable/images_power"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/wpx20"
+                android:text="@string/chongdianinfor"
+                android:textColor="@color/gray4"
+                android:textSize="@dimen/sp16"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="@dimen/wpx30"
+                android:src="@drawable/right"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/hpx20"
+        android:layout_marginTop="@dimen/hpx20"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <LinearLayout
+                android:id="@id/tab_home_qianbaolayout"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:background="@drawable/home_layout"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/wpx80"
+                    android:layout_height="@dimen/wpx80"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/qianbaochongzhi"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hpx20"
+                    android:gravity="center"
+                    android:text="钱包充值"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/wpx1"
+                android:layout_height="match_parent"
+                android:background="@color/login_line_gray"/>
+
+            <LinearLayout
+                android:id="@+id/tab_home_searchpowerlayout"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:background="@drawable/home_layout"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/wpx80"
+                    android:layout_height="@dimen/wpx80"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/xunzhaodianzhuan"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hpx20"
+                    android:gravity="center"
+                    android:text="寻找电桩"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/wpx1"
+                android:layout_height="match_parent"
+                android:background="@color/login_line_gray"/>
+
+            <LinearLayout
+                android:id="@id/tab_home_saomalayout"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:background="@drawable/home_layout"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/wpx80"
+                    android:layout_height="@dimen/wpx80"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/saomachongdian"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hpx20"
+                    android:gravity="center"
+                    android:text="扫码充电"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx1"
+            android:background="@color/login_line_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <LinearLayout
+                android:id="@id/tab_home_duanzulayout"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:background="@drawable/home_layout"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/wpx80"
+                    android:layout_height="@dimen/wpx80"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/zuche"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hpx20"
+                    android:gravity="center"
+                    android:text="租车"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/wpx1"
+                android:layout_height="match_parent"
+                android:background="@color/login_line_gray"/>
+
+            <LinearLayout
+                android:id="@id/tab_home_changzulayout"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:background="@drawable/home_layout"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/wpx80"
+                    android:layout_height="@dimen/wpx80"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sengqingchangzhu"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hpx20"
+                    android:gravity="center"
+                    android:text="申请长租"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/wpx1"
+                android:layout_height="match_parent"
+                android:background="@color/login_line_gray"/>
+
+            <LinearLayout
+                android:id="@id/tab_home_dingdanlayout"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:background="@drawable/home_layout"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/wpx80"
+                    android:layout_height="@dimen/wpx80"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/wodedingdan"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hpx20"
+                    android:gravity="center"
+                    android:text="我的订单"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

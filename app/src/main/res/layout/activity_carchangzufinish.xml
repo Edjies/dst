@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgroudgray"
+              android:orientation="vertical"
+              tools:context=".alipay.AliPayActivity">
+
+    <FrameLayout
+        android:id="@id/changzufinish_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@id/changzufinish_back"
+            style="@style/back"/>
+
+        <TextView
+            android:text="@string/shenqingchangzu"
+            style="@style/topTitle"/>
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="@dimen/wpx200"
+        android:layout_height="@dimen/wpx200"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/hpx100"
+        android:scaleType="fitXY"
+        android:src="@drawable/successed"/>
+
+    <TextView
+        android:id="@id/changzu_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hpx80"
+        android:gravity="center"
+        android:text="@string/yichenggongtijiaochengq"
+        android:textColor="@color/textgreen"
+        android:textSize="@dimen/sp16"/>
+
+    <TextView
+        android:id="@id/changzu_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hpx80"
+        android:gravity="center"
+        android:text="@string/yichenggongtijiaochengq2"
+        android:textColor="@color/gray4"
+        android:textSize="@dimen/sp14"/>
+
+    <TextView
+        android:id="@id/changzu_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hpx10"
+        android:gravity="center"
+        android:text="@string/yichenggongtijiaochengq3"
+        android:textColor="@color/gray4"
+        android:textSize="@dimen/sp14"/>
+
+    <TextView
+        android:id="@id/changzufinish_ok"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx100"
+        android:layout_marginLeft="@dimen/wpx60"
+        android:layout_marginRight="@dimen/wpx60"
+        android:layout_marginTop="@dimen/hpx200"
+        android:background="@drawable/chongdianyemian5_1_03"
+        android:gravity="center"
+        android:text="@string/fanhuizhuye"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp18"/>
+
+</LinearLayout>

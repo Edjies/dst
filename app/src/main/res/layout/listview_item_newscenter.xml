@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/hpx200"
+    android:background="@color/backgroudgray"
+    android:paddingTop="@dimen/hpx20" >
+
+    <HorizontalScrollView
+        android:id="@id/listview_item_newscenter_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@id/listview_item_newscenter_toplayout"
+                android:layout_width="@dimen/wpx720"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@id/listview_item_newscenter_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/hpx120"
+                    android:paddingLeft="@dimen/wpx24"
+                    android:paddingRight="@dimen/wpx24"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/sp16" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx60"
+                    android:paddingLeft="@dimen/wpx24"
+                    android:paddingRight="@dimen/wpx24" >
+
+                    <TextView
+                        android:id="@id/listview_item_newscenter_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:id="@id/listview_item_newscenter_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/sp16" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/listview_item_newscenter_shanchu"
+                android:layout_width="@dimen/wpx150"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:gravity="center"
+                android:text="@string/shanchu"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp18" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</FrameLayout>

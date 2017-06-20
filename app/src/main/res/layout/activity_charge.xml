@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgroudgray"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@id/charge_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+       >
+
+        <TextView
+            android:id="@id/charge_back"
+            style="@style/back"/>
+
+        <TextView
+            android:text="@string/map_charge"
+            style="@style/topTitle"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hpx20"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/wpx24"
+        android:paddingRight="@dimen/wpx24">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@id/charge_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/hpx80"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16"/>
+
+            <ImageView
+                android:id="@id/charge_connection"
+                android:layout_width="@dimen/wpx30"
+                android:layout_height="@dimen/hpx30"
+                android:layout_gravity="right|center_vertical"
+                android:scaleType="fitXY"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx80"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@id/charge_inforleft"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16"/>
+
+            <TextView
+                android:id="@id/charge_inforright"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="center_vertical"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/charge_chargelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hpx20"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/wpx24"
+        android:paddingRight="@dimen/wpx24">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hpx20"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@id/charge_chargeaclayout"
+                android:layout_width="@dimen/wpx255"
+                android:layout_height="@dimen/wpx255"
+                android:layout_marginTop="@dimen/hpx30"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:layout_width="@dimen/wpx255"
+                    android:layout_height="@dimen/wpx255"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@id/charge_socac"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/textgreen"
+                        android:textSize="@dimen/sp28"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|center_horizontal"
+                        android:layout_marginTop="@dimen/hpx30"
+                        android:gravity="center"
+                        android:text="@string/soc2"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp12"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="@dimen/hpx30"
+                        android:gravity="center"
+                        android:text="@string/kwh"
+                        android:textColor="@color/textgreen"
+                        android:textSize="@dimen/sp12"/>
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@id/charge_chargeacimage"
+                    android:layout_width="@dimen/wpx255"
+                    android:layout_height="@dimen/wpx255"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cir1"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@id/charge_chargedc2layout"
+                android:layout_width="@dimen/wpx255"
+                android:layout_height="@dimen/wpx255"
+                android:layout_marginTop="@dimen/hpx30"
+                android:background="@drawable/gray_circle"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="@dimen/wpx30"
+                    android:layout_height="@dimen/hpx45"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/power_icon"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/wpx10"
+                    android:text="@string/dengdai"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp16"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@id/charge_chargedclayout"
+                android:layout_width="@dimen/wpx255"
+                android:layout_height="@dimen/wpx255"
+                android:layout_marginTop="@dimen/hpx30"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@id/charge_soc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/textgreen"
+                    android:textSize="@dimen/sp28"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_marginTop="@dimen/hpx30"
+                    android:gravity="center"
+                    android:text="@string/soc"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp12"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@id/charge_chargetime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/hpx20"
+                android:layout_marginTop="@dimen/hpx20"
+                android:gravity="center"
+                android:textColor="@color/textgreen"
+                android:textSize="@dimen/sp16"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx80"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/chongdiankaishishijian"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16"/>
+
+            <TextView
+                android:id="@id/charge_starttime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/wpx10"
+                android:gravity="center_vertical"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx80"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/yujijieshushijian"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16"/>
+
+            <TextView
+                android:id="@id/charge_endtime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/wpx10"
+                android:gravity="center_vertical"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hpx50"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@id/charge_endbutton"
+            android:layout_width="@dimen/wpx270"
+            android:layout_height="@dimen/hpx100"
+            android:background="@drawable/chongdianjiemian10_1_07"
+            android:gravity="center"
+            android:text="@string/tingzhichongdian"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16"/>
+
+        <Button
+            android:id="@id/charge_returnbvutton"
+            android:layout_width="@dimen/wpx270"
+            android:layout_height="@dimen/hpx100"
+            android:layout_marginLeft="@dimen/wpx40"
+            android:background="@drawable/chongdianjiemian10_1_09"
+            android:gravity="center"
+            android:text="@string/fanhuishouye"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16"/>
+    </LinearLayout>
+
+</LinearLayout>

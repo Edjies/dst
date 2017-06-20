@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudgray" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroudgray" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@id/carordermoner_top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="@dimen/hpx50" >
+
+                <TextView
+                    android:id="@id/carordermoner_back"
+                    style="@style/back" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hpx96"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/dingdanfeiyong"
+                    android:textColor="@color/textgreen"
+                    android:textSize="@dimen/sp18" />
+            </FrameLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/hpx102"
+                android:layout_marginTop="@dimen/hpx10"
+                android:fadingEdge="none"
+                android:overScrollMode="never"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/hpx10"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/hpx20"
+                        android:paddingTop="@dimen/hpx20" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/hpx235"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:weightSum="1.0" >
+
+                            <LinearLayout
+                                android:layout_width="0px"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/qucheshijian"
+                                    android:textColor="@color/gray4"
+                                    android:textSize="@dimen/sp16" />
+
+                                <LinearLayout
+                                    android:id="@id/carordermoner_quche_layout"
+                                    android:layout_width="@dimen/wpx300"
+                                    android:layout_height="@dimen/hpx130"
+                                    android:layout_marginTop="@dimen/hpx15"
+                                    android:background="@drawable/image_05"
+                                    android:gravity="center"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@id/carordermoner_quche_time"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:textColor="@color/textgreen"
+                                        android:textSize="@dimen/sp16"
+                                        android:visibility="gone" />
+
+                                    <TextView
+                                        android:id="@id/carordermoner_quche_week"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:textColor="@color/textgreen"
+                                        android:textSize="@dimen/sp16"
+                                        android:visibility="gone" />
+
+                                    <TextView
+                                        android:id="@id/carordermoner_quche_infor"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/qucheshijian2"
+                                        android:textColor="@color/gray"
+                                        android:textSize="@dimen/sp16" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0px"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/haicheshijian"
+                                    android:textColor="@color/gray4"
+                                    android:textSize="@dimen/sp16" />
+
+                                <LinearLayout
+                                    android:id="@id/carordermoner_haiche_layout"
+                                    android:layout_width="@dimen/wpx300"
+                                    android:layout_height="@dimen/hpx130"
+                                    android:layout_marginTop="@dimen/hpx15"
+                                    android:background="@drawable/image_05"
+                                    android:gravity="center"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@id/carordermoner_haiche_time"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:textColor="@color/textgreen"
+                                        android:textSize="@dimen/sp16"
+                                        android:visibility="gone" />
+
+                                    <TextView
+                                        android:id="@id/carordermoner_haiche_week"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:textColor="@color/textgreen"
+                                        android:textSize="@dimen/sp16"
+                                        android:visibility="gone" />
+
+                                    <TextView
+                                        android:id="@id/carordermoner_haiche_infor"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/haicheshijian2"
+                                        android:textColor="@color/gray"
+                                        android:textSize="@dimen/sp16" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/hpx1"
+                            android:background="@color/line_gray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/hpx60"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/wpx24"
+                            android:paddingRight="@dimen/wpx24" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="left"
+                                android:gravity="center_vertical"
+                                android:text="@string/bujimianpeishuoming"
+                                android:textColor="@color/gray4"
+                                android:textSize="@dimen/sp16" />
+
+                            <TextView
+                                android:id="@id/carinfor_baoxian_money"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/wpx20"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/textgreen"
+                                android:textSize="@dimen/sp16" />
+
+                            <CheckBox
+                                android:id="@id/carinfor_baoxian_open"
+                                android:layout_width="@dimen/wpx48"
+                                android:layout_height="@dimen/wpx48"
+                                android:layout_marginLeft="@dimen/wpx20"
+                                android:background="@drawable/btn_radio_yuan"
+                                android:button="@null"
+                                android:checked="true" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/hpx60"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/wpx24"
+                            android:paddingRight="@dimen/wpx24" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/yongcheshichang"
+                                android:textColor="@color/gray4"
+                                android:textSize="@dimen/sp16" />
+
+                            <TextView
+                                android:id="@id/carordermoner_car_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/wpx20"
+                                android:gravity="center"
+                                android:textColor="@color/gray4"
+                                android:textSize="@dimen/sp16" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/hpx60"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/wpx24"
+                            android:paddingRight="@dimen/wpx24" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/zuchefeiyong"
+                                android:textColor="@color/gray4"
+                                android:textSize="@dimen/sp16" />
+
+                            <TextView
+                                android:id="@id/carordermoner_car_zuchefeiyong"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/wpx20"
+                                android:gravity="center"
+                                android:textColor="@color/textgreen"
+                                android:textSize="@dimen/sp16" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/hpx60"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/wpx24"
+                            android:paddingRight="@dimen/wpx24" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/cheliangyajin"
+                                android:textColor="@color/gray4"
+                                android:textSize="@dimen/sp16" />
+
+                            <TextView
+                                android:id="@id/carordermoner_car_cheliangyajin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/wpx20"
+                                android:gravity="center"
+                                android:textColor="@color/textgreen"
+                                android:textSize="@dimen/sp16" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/wpx24"
+                            android:paddingRight="@dimen/wpx24" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/lichengfeiyong"
+                                android:textColor="@color/gray4"
+                                android:textSize="@dimen/sp16" />
+
+                            <TextView
+                                android:id="@id/carordermoner_car_lichengfeiyong"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/wpx20"
+                                android:gravity="center_vertical"
+                                android:minHeight="@dimen/hpx60"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/sp16" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/hpx20"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/hpx20"
+                        android:paddingTop="@dimen/hpx20" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/hpx70"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/wpx24"
+                            android:text="@string/wangdianxinxi"
+                            android:textColor="@color/gray4"
+                            android:textSize="@dimen/sp18" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/hpx1"
+                            android:background="@color/line_gray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/wpx24"
+                            android:paddingRight="@dimen/wpx24" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/quchewangdian"
+                                android:textColor="@color/gray4"
+                                android:textSize="@dimen/sp16" />
+
+                            <TextView
+                                android:id="@id/carordermoner_car_quchewangdian"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/wpx20"
+                                android:gravity="center"
+                                android:minHeight="@dimen/hpx60"
+                                android:textColor="@color/gray4"
+                                android:textSize="@dimen/sp16" />
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/wpx24"
+                            android:paddingRight="@dimen/wpx24" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="left"
+                                    android:gravity="center"
+                                    android:text="@string/haichewangdian"
+                                    android:textColor="@color/gray4"
+                                    android:textSize="@dimen/sp16" />
+
+                                <TextView
+                                    android:id="@id/carordermoner_car_haichewangdian"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/wpx20"
+                                    android:gravity="center_vertical"
+                                    android:minHeight="@dimen/hpx60"
+                                    android:minWidth="@dimen/wpx400"
+                                    android:textColor="@color/gray4"
+                                    android:textSize="@dimen/sp16" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="@dimen/wpx12"
+                                android:layout_height="@dimen/hpx20"
+                                android:layout_gravity="right|center_vertical"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/right"
+                                android:visibility="gone" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/hpx20"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/hpx20" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/hpx70"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/wpx24"
+                            android:text="@string/hejiyufukuan"
+                            android:textColor="@color/gray4"
+                            android:textSize="@dimen/sp18" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/hpx1"
+                            android:background="@color/line_gray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/hpx360"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/wpx24"
+                            android:paddingRight="@dimen/wpx24" >
+
+                            <TextView
+                                android:id="@id/carordermoner_infor_money"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="@color/textgreen"
+                                android:textSize="@dimen/sp30" />
+
+                            <TextView
+                                android:id="@id/carordermoner_infor_infor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/hpx40"
+                                android:gravity="center"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/sp14" />
+
+                            <TextView
+                                android:id="@id/carordermoner_infor_infor2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/hpx10"
+                                android:gravity="center"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/sp14"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@id/carordermoner_infor_infor3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/hpx10"
+                                android:gravity="center"
+                                android:minHeight="@dimen/hpx50"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/sp14"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/carordermoner_tijiaodindgan"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hpx100"
+            android:layout_gravity="bottom"
+            android:background="@color/yellow2"
+            android:gravity="center"
+            android:text="@string/tijiaodingdan"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@id/carordermoner_date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_black"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx100"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/wpx20"
+                android:paddingRight="@dimen/wpx20"
+                android:weightSum="1.0" >
+
+                <TextView
+                    android:id="@id/carordermoner_date_cancel"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:gravity="center_vertical"
+                    android:text="@string/quxiao"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/sp18" />
+
+                <TextView
+                    android:id="@id/carordermoner_date_type"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/sp18" />
+
+                <TextView
+                    android:id="@id/carordermoner_date_ok"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/ok"
+                    android:textColor="@color/textgreen"
+                    android:textSize="@dimen/sp18" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx1"
+                android:background="@color/line_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx450"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <LinearLayout
+                    android:id="@id/carordermoner_date_picklayout"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/hpx450"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/carordermoner_date_picklayout2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/hpx450"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

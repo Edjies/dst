@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/acitivty_myweizhang_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/my_weizhang_back"
+            style="@style/back"/>
+
+        <TextView
+            style="@style/topTitle"
+            android:text="我的违章"
+        />
+    </FrameLayout>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/line_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/acitivty_myweizhang_weichuli_layout"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:id="@+id/acitivty_myweizhang_weichuli"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="未处理"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16"/>
+
+            <TextView
+                android:id="@+id/acitivty_myweizhang_weichuli_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx5"
+                android:layout_gravity="bottom"
+                android:background="@color/textgreen"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="@dimen/wpx1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/hpx10"
+            android:layout_marginTop="@dimen/hpx10"
+            android:background="@color/line_gray"/>
+
+        <FrameLayout
+            android:id="@+id/acitivty_myweizhang_yichuli_layout"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:id="@+id/acitivty_myweizhang_yichuli"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="已处理"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp16"/>
+
+            <TextView
+                android:id="@+id/acitivty_myweizhang_yichuli_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hpx5"
+                android:layout_gravity="bottom"
+                android:background="@color/textgreen"
+                android:visibility="gone"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/activity_my_weizhang_pull_fresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    />
+
+</LinearLayout>

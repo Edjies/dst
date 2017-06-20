@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <ImageView
+        android:id="@id/lockpattern_userimage"
+        android:layout_width="@dimen/wpx200"
+        android:layout_height="@dimen/wpx200"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="@dimen/hpx100"
+        android:scaleType="fitXY" />
+
+    <com.haofeng.apps.dst.lockpattern.LockPatternView
+        xmlns:app="http://schemas.android.com/apk/res/com.wgs.jiesuo"
+        android:id="@id/lockpattern_lockview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx600"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/wpx60"
+        android:layout_marginRight="@dimen/wpx60"
+        android:layout_marginTop="@dimen/hpx50"
+        android:background="@color/transparent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/hpx100"
+        android:layout_marginLeft="@dimen/wpx40"
+        android:layout_marginRight="@dimen/wpx40" >
+
+        <TextView
+            android:id="@id/lockpattern_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:text="@string/wangjishoushimima"
+            android:textColor="@color/textgreen"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:id="@id/lockpattern_other"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="center_vertical"
+            android:text="@string/yongqitazhanghaodenglv"
+            android:textColor="@color/textgreen"
+            android:textSize="@dimen/sp14" />
+    </FrameLayout>
+
+</FrameLayout>
