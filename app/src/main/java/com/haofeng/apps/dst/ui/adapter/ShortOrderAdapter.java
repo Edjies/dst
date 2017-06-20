@@ -134,6 +134,12 @@ public class ShortOrderAdapter extends BaseAdapter {
             viewHolder.mTvDurationUnit.setText("天");
             viewHolder.mTvDuration.setText(String.valueOf(UDate.getDiff(qc_datetime, hc_datetime, "yyyy-MM-dd HH:mm:ss") /  (1000 * 60 * 60 * 24L)));
         }
+
+        if(StateConst.ORDER_STATE_2.equals(item.m_order_state)) {
+            viewHolder.mTvDuration.setText("");
+            viewHolder.mTvReturnDate.setText("");
+            viewHolder.mTvReturnTime.setText("");
+        }
         // 预计租车费用
         if("0".equals(item.m_order_state) || "1".equals(item.m_order_state) || "2".equals(item.m_order_state) || "3".equals(item.m_order_state) || "6".equals(item.m_order_state)) {
             viewHolder.mTvRent.setText("¥" + item.m_rent_amount);

@@ -10,8 +10,6 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.volley.Request;
-import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.haofeng.apps.dst.DataCache;
@@ -22,8 +20,6 @@ import com.haofeng.apps.dst.bean.BeanParser;
 import com.haofeng.apps.dst.bean.Car;
 import com.haofeng.apps.dst.bean.CitySite;
 import com.haofeng.apps.dst.bean.LongOrderDetail;
-import com.haofeng.apps.dst.bean.ResCarList;
-import com.haofeng.apps.dst.bean.ResCitySite;
 import com.haofeng.apps.dst.bean.ResLongOrderDetail;
 import com.haofeng.apps.dst.httptools.Constent;
 import com.haofeng.apps.dst.utils.PublicUtil;
@@ -139,75 +135,15 @@ public class LongOrderDetailActivity extends BaseActivity implements View.OnClic
     private void initData() {
         mCars = DataCache.getInstance().getLongRentCars();
         mCitys = DataCache.getInstance().getCitySite();
-        execGetData();
+        execGetOrderDetail();
     }
 
 
-    /**
-     * 获取租车列表中的车辆信息(根据城市id获取该城市的列表)
-     */
-    private void execGetCarList() {
-        String url = "";
-        try {
-            url = new UrlBuilder().setHost(ServerManager.getInstance().getMainServer()).setPath("/app/car/long_car_type")
-                    .append("city_id", "77")
-                    .append("user_id", PublicUtil.getStorage_string(this , "userid", ""))
-                    .append("secret", Constent.secret)
-                    .append("ver", URLEncoder.encode(Constent.VER, "utf-8"))
-                    .append("loginkey", PublicUtil.getStorage_string(this , "loginkey2", ""))
-                    .build();
-        }catch (Exception e) {
 
-        }
-        ULog.e(TAG, url);
-        UVolley.getVolley(this).addToRequestQueue(new JsonObjectRequest(com.android.volley.Request.Method.GET, url, new JSONObject(), new com.android.volley.Response.Listener<JSONObject>() {
-            @Override
-            public void onResponse(JSONObject response) {
-                ResCarList res = BeanParser.parseLongCarList(response);
-                if(res.mCode == BaseRes.RESULT_OK) {
-                    mCars = res.mDatas;
-                    onDataReceived();
-                }else {
-                    hideProgress();
-                }
-            }
-        }, new com.android.volley.Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                hideProgress();
-            }
-        }));
-    }
-
-
-    private void execGetCitySite() {
-
-        String url = new UrlBuilder().setHost(ServerManager.getInstance().getMainServer()).setPath("/app/car/get_city_list")
-                .append("user_id", PublicUtil.getStorage_string(this, "userid", ""))
-                .append("secret", Constent.secret)
-                .append("ver", Constent.VER)
-                .append("loginkey", PublicUtil.getStorage_string(this, "loginkey2", ""))
-                .build();
-        UVolley.getVolley(this).addToRequestQueue(new JsonObjectRequest(Request.Method.GET, url, new JSONObject(), new Response.Listener<JSONObject>() {
-            @Override
-            public void onResponse(JSONObject response) {
-                ResCitySite res = BeanParser.parseCitySite(response);
-                if(res.mCode == BaseRes.RESULT_OK) {
-                    mCitys = res.mDatas;
-                    onDataReceived();
-                }else {
-                    hideProgress();
-                }
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                hideProgress();
-            }
-        }));
-    }
 
     public void execGetOrderDetail() {
+
+        showProgress("加载中...");
         String url = "";
         try {
             url = new UrlBuilder().setHost(ServerManager.getInstance().getMainServer()).setPath("/app/car/long_order_scan")
@@ -225,12 +161,12 @@ public class LongOrderDetailActivity extends BaseActivity implements View.OnClic
             @Override
             public void onResponse(JSONObject response) {
                 ULog.e(TAG, response.toString());
-
+                hideProgress();
                 if(isPageResumed) {
                     ResLongOrderDetail res = BeanParser.parseLongOrderDetail(response);
                     if(res.mCode == BaseRes.RESULT_OK) {
                         mOrder = res.mOrder;
-                        onDataReceived();
+                        execRefreshPage(mOrder);
                     }else {
                         hideProgress();
                         Toast.makeText(LongOrderDetailActivity.this, res.mMessage, Toast.LENGTH_SHORT).show();
@@ -247,25 +183,6 @@ public class LongOrderDetailActivity extends BaseActivity implements View.OnClic
     }
 
 
-    private void execGetData() {
-        showProgress("加载中...");
-        if(mCars == null) {
-            execGetCarList();
-        }
-
-//        if(mCitys == null) {
-//            execGetCitySite();
-//        }
-
-        execGetOrderDetail();
-    }
-
-    private void onDataReceived() {
-        if(mCars != null && mOrder != null) {
-            hideProgress();
-            execRefreshPage(mOrder);
-        }
-    }
 
     private void execRefreshPage(LongOrderDetail item) {
         mSvContent.setVisibility(View.VISIBLE);
@@ -297,13 +214,6 @@ public class LongOrderDetailActivity extends BaseActivity implements View.OnClic
             TextView tvDuration = (TextView) view.findViewById(R.id.tv_duration);
             LongOrderDetail.CarModel model = item.m_car_models.get(i);
             tvDemand.setText("车型需求("+ (i+1) +")");
-            for(int j = 0; j < mCars.size(); j++) {
-                Car car = mCars.get(j);
-                if(car.mId == model.m_car_type_id) {
-                    tvCarType.setText(car.mBrandName + car.mCarModelName);
-                    break;
-                }
-            }
             tvCarType.setText(model.m_car_type_id);
             tvNumber.setText(model.m_num);
             tvDuration.setText(model.m_use_time + "个月");
